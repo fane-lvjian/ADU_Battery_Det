@@ -1,0 +1,731 @@
+Executable File = C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Bin\battery-det.out
+
+Timestamp is Sat Feb 20 11:41:11 2021
+
+
+Start		Length(Word)		Type		Name		Module
+0X000000	0X0008		Code		crt0@code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X000008	0X0001		Code		_interrupt@_isr_isr		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000009	0X0000		Code		.CODE		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000009	0X0000		Code		.CODE		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000009	0X0000		Code		.CODE		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00000A	0X0004		Code		_SGV_INIT_CODE_BEGIN		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X00000E	0X000B		Code		_SGV_INIT_CODE		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X00000E	0X000B		Code		_SGV_INIT_CODE		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000010	0X000B		Code		_SGV_INIT_CODE		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000019	0X000C		Code		_SGV_INIT_CODE_END		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X000025	0X0011		Code		__CmpULong@RTSegment		2cmplong.o
+0X000036	0X002A		Code		sn8cc_lib@RTSegment		1sn8cc_lib.o
+0X000060	0X0020		Code		_Function_isr_isr_code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000080	0X0027		Code		_Function_main_code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A7	0X000E		Code		_Function_initTimer_code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B5	0X0008		Code		_Function_init_IO_code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BD	0X0015		Code		_Function_dc_DET_code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000D2	0X01A4		Code		_Function_initAD_code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000276	0X0034		Code		_Function_controlAD_code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AA	0X0004		Code		_Function_getBAT_AD_code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AE	0X0006		Code		_Function_clearAD_code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002B4	0X0008		Code		_DATA_INIT_CODE		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BC	0X0003		Code		_Function_initLED_code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BF	0X0089		Code		_Function_controlLED_code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000348	0X0025		Code		_Function_setLED_code		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00036D	0X0023		Code		__Get2ByteParaToDest@RTL		2get2bytepara.o
+0X000390	0X0030		Code		__Get2BytePara@RTL		2get2bytepara.o
+0X0003C0	0X0009		Code		__SLLong@RTL		2sllong.o
+0X0003C9	0X000B		Code		__SRLong@RTL		2srlong.o
+0X0003D4	0X0007		Code		__Mov2ByteRamToLArg@RTL		2movramtolarg.o
+0X0003DB	0X000F		Code		__Mov4ByteRamToLArg@RTL		2movramtolarg.o
+0X0003EA	0X0007		Code		__Mov2ByteRamToRArg@RTL		2movramtorarg.o
+0X0003F1	0X000A		Code		__Mov4ByteRamToRArg@RTL		2movramtorarg.o
+
+Start		Length(Byte)		Type		Name		Module
+0X000000	0X0005		Data		crt0@data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X000005	0X0006		Data		_InterruptBackupData		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00000B	0X0004		Data		_VirtualReg		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00000B	0X0004		Data		_VirtualReg		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00000F	0X0001		Data		_led_c_GlobalBitDataPool0		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000010	0X000A		Data		__runtime_arg		2cmplong.o
+0X000010	0X000A		Data		__runtime_arg		2get2bytepara.o
+0X000010	0X000A		Data		__runtime_arg		2sllong.o
+0X000010	0X000A		Data		__runtime_arg		2srlong.o
+0X000010	0X000A		Data		__runtime_arg		2movramtolarg.o
+0X000010	0X000A		Data		__runtime_arg		2movramtorarg.o
+0X00001A	0X0001		Data		_bat_in_cnt@segment		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001B	0X0001		Data		_dc_in_cnt@segment		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001C	0X0001		Data		_fcout2@segment		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001D	0X0001		Data		_fcout1@segment		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001E	0X0001		Data		_dc_type@segment		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001F	0X0001		Data		_adBattIdx@segment		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000020	0X0002		Data		_ad_val_sum@segment		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000022	0X0002		Data		_ad_value@segment		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000024	0X0001		Data		_led_status@segment		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000025	0X0010		Data		_LedChangeBufSetting@segment		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000035	0X0000		Data		_Function_isr_isr_data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000035	0X0000		Data		_Function_initTimer_data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000035	0X0000		Data		_Function_init_IO_data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000035	0X0000		Data		_Function_dc_DET_data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000035	0X0000		Data		_Function_initLED_data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000035	0X0001		Data		_Function_setLED_data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000035	0X0000		Data		_Function_getBAT_AD_data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000035	0X0000		Data		_Function_clearAD_data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000035	0X0000		Data		_Function_initAD_data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000035	0X0004		Data		_Function_controlAD_data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000036	0X0003		Data		_Function_controlLED_data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000039	0X0002		Data		_Function_main_data		C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+
+Address		Type		Size(Byte)		Public/Local		Segment			Module
+0X000000	Section		0X010		L:crt0@code		crt0@code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X000008	Section		0X002		L:_interrupt@_isr_isr		_interrupt@_isr_isr			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000008	No type		0X000		L:_vector_for_isr_isr		_interrupt@_isr_isr			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000009	Section		0X000		L:.CODE		.CODE			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000009	No type		0X000		L:Ltext0		.CODE			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000009	No type		0X000		L:Ltext0		.CODE			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000009	Section		0X000		L:.CODE		.CODE			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000009	Section		0X000		L:.CODE		.CODE			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000009	No type		0X000		L:Ltext0		.CODE			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00000A	Section		0X008		L:_SGV_INIT_CODE_BEGIN		_SGV_INIT_CODE_BEGIN			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X00000A	No type		0X000		P:_sgv_init_entry		_SGV_INIT_CODE_BEGIN			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X00000E	Section		0X016		L:_SGV_INIT_CODE		_SGV_INIT_CODE			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X00000E	Section		0X016		L:_SGV_INIT_CODE		_SGV_INIT_CODE			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000010	Section		0X016		L:_SGV_INIT_CODE		_SGV_INIT_CODE			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000019	Section		0X018		L:_SGV_INIT_CODE_END		_SGV_INIT_CODE_END			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X00001B	No type		0X000		P:__ClearWatchDogTimer		_SGV_INIT_CODE_END			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X00001E	No type		0X000		P:__ClrRAM		_SGV_INIT_CODE_END			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X000020	No type		0X000		L:ClrRAM10		_SGV_INIT_CODE_END			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X000025	No type		0X000		P:__CmpLong		__CmpULong@RTSegment			2cmplong.o
+0X000025	Section		0X022		L:__CmpULong@RTSegment		__CmpULong@RTSegment			2cmplong.o
+0X000028	No type		0X000		P:__CmpULong		__CmpULong@RTSegment			2cmplong.o
+0X00002B	No type		0X000		L:@@Judge_equal		__CmpULong@RTSegment			2cmplong.o
+0X000030	No type		0X000		L:@@Judge_unequal		__CmpULong@RTSegment			2cmplong.o
+0X000034	No type		0X000		L:@@Result_Less		__CmpULong@RTSegment			2cmplong.o
+0X000035	No type		0X000		L:@@EndLable		__CmpULong@RTSegment			2cmplong.o
+0X000036	Section		0X054		L:sn8cc_lib@RTSegment		sn8cc_lib@RTSegment			1sn8cc_lib.o
+0X000036	No type		0X000		P:__INIT@global_		sn8cc_lib@RTSegment			1sn8cc_lib.o
+0X00003A	No type		0X000		L:LOOP		sn8cc_lib@RTSegment			1sn8cc_lib.o
+0X000047	No type		0X000		L:_Continue1		sn8cc_lib@RTSegment			1sn8cc_lib.o
+0X000050	No type		0X000		L:_Continue2		sn8cc_lib@RTSegment			1sn8cc_lib.o
+0X00005F	No type		0X000		L:_END		sn8cc_lib@RTSegment			1sn8cc_lib.o
+0X000060	No type		0X000		P:_isr_isr		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000060	Section		0X040		L:_Function_isr_isr_code		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00006D	No type		0X000		L:L5		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00006D	No type		0X000		L:L7		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00006D	No type		0X000		L:L6		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00006F	No type		0X000		L:L8		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00006F	No type		0X000		L:L9		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00006F	No type		0X000		L:L10		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000070	No type		0X000		L:L11		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000072	No type		0X000		L:L12		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000072	No type		0X000		L:L13		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000072	No type		0X000		L:L3		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000072	No type		0X000		L:L14		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000072	No type		0X000		L:L15		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000072	No type		0X000		L:L2		_Function_isr_isr_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000080	Section		0X04E		L:_Function_main_code		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000080	No type		0X000		P:_main		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000080	No type		0X000		L:L26		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000080	No type		0X000		L:L27		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000080	No type		0X000		L:L28		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000080	No type		0X000		L:L67		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000080	No type		0X000		L:L16		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000080	No type		0X000		L:_main_end		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000080	No type		0X000		L:L68		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000082	No type		0X000		L:L29		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000083	No type		0X000		L:L30		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000084	No type		0X000		L:L31		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000085	No type		0X000		L:L32		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000086	No type		0X000		L:L34		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000086	No type		0X000		L:L35		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000086	No type		0X000		L:L17		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000086	No type		0X000		L:L33		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000087	No type		0X000		L:L36		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00008A	No type		0X000		L:L37		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00008A	No type		0X000		L:L38		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00008A	No type		0X000		L:L39		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00008B	No type		0X000		L:L40		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00008D	No type		0X000		L:L41		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00008E	No type		0X000		L:L42		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00008F	No type		0X000		L:L45		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00008F	No type		0X000		L:L20		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00008F	No type		0X000		L:L44		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00008F	No type		0X000		L:L43		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000093	No type		0X000		L:L47		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000093	No type		0X000		L:L46		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000093	No type		0X000		L:L48		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000094	No type		0X000		L:L49		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000097	No type		0X000		L:L51		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000097	No type		0X000		L:L52		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000097	No type		0X000		L:L50		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00009B	No type		0X000		L:L53		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00009C	No type		0X000		L:L55		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00009C	No type		0X000		L:L54		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00009D	No type		0X000		L:L58		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00009D	No type		0X000		L:L57		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00009D	No type		0X000		L:L56		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00009D	No type		0X000		L:L24		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A1	No type		0X000		L:L59		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A6	No type		0X000		L:L65		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A6	No type		0X000		L:L18		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A6	No type		0X000		L:L66		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A6	No type		0X000		L:L61		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A6	No type		0X000		L:L25		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A6	No type		0X000		L:L60		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A6	No type		0X000		L:L62		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A6	No type		0X000		L:L63		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A6	No type		0X000		L:L22		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A6	No type		0X000		L:L64		_Function_main_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A7	No type		0X000		L:L71		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A7	No type		0X000		L:L72		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A7	Section		0X01C		L:_Function_initTimer_code		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A7	No type		0X000		P:_initTimer		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A7	No type		0X000		L:L70		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000A9	No type		0X000		L:L73		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000AB	No type		0X000		L:L74		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000AC	No type		0X000		L:L75		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000AD	No type		0X000		L:L76		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000AE	No type		0X000		L:L77		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000AF	No type		0X000		L:L78		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B0	No type		0X000		L:L79		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B2	No type		0X000		L:L80		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B3	No type		0X000		L:L81		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B4	No type		0X000		L:L82		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B4	No type		0X000		L:L83		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B4	No type		0X000		L:L84		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B4	No type		0X000		L:L69		_Function_initTimer_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B5	Section		0X010		L:_Function_init_IO_code		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B5	No type		0X000		P:_init_IO		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B5	No type		0X000		L:L86		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B5	No type		0X000		L:L87		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B5	No type		0X000		L:L88		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B6	No type		0X000		L:L89		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B7	No type		0X000		L:L90		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B8	No type		0X000		L:L91		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000B9	No type		0X000		L:L92		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BA	No type		0X000		L:L93		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BB	No type		0X000		L:L94		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BC	No type		0X000		L:L97		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BC	No type		0X000		L:L85		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BC	No type		0X000		L:L95		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BC	No type		0X000		L:L96		_Function_init_IO_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BD	No type		0X000		L:L106		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BD	No type		0X000		L:L105		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BD	No type		0X000		L:Letext		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BD	Section		0X02A		L:_Function_dc_DET_code		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BD	No type		0X000		P:_dc_DET		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BD	No type		0X000		L:L107		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BF	No type		0X000		L:L110		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BF	No type		0X000		L:L109		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000BF	No type		0X000		L:L108		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C0	No type		0X000		L:L111		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C2	No type		0X000		L:L112		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C5	No type		0X000		L:L113		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C5	No type		0X000		L:L115		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C5	No type		0X000		L:L114		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C6	No type		0X000		L:L116		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C7	No type		0X000		L:L120		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C7	No type		0X000		L:L119		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C7	No type		0X000		L:L118		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C7	No type		0X000		L:L117		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C8	No type		0X000		L:L99		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C8	No type		0X000		L:L121		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C8	No type		0X000		L:L122		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C8	No type		0X000		L:L123		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000C9	No type		0X000		L:L124		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000CB	No type		0X000		L:L125		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000CE	No type		0X000		L:L126		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000CE	No type		0X000		L:L128		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000CE	No type		0X000		L:L127		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000CF	No type		0X000		L:L129		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000D1	No type		0X000		L:L98		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000D1	No type		0X000		L:L136		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000D1	No type		0X000		L:L135		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000D1	No type		0X000		L:L134		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000D1	No type		0X000		L:L133		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000D1	No type		0X000		L:L132		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000D1	No type		0X000		L:L131		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000D1	No type		0X000		L:L130		_Function_dc_DET_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X0000D2	No type		0X000		L:L4		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000D2	No type		0X000		L:L3		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000D2	No type		0X000		L:L2		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000D2	No type		0X000		P:_initAD		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000D2	Section		0X348		L:_Function_initAD_code		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000D4	No type		0X000		L:L5		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000D6	No type		0X000		L:L6		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000D7	No type		0X000		L:L7		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000D9	No type		0X000		L:L8		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000DA	No type		0X000		L:L9		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000DC	No type		0X000		L:L10		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000DE	No type		0X000		L:L11		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000DF	No type		0X000		L:L12		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000E0	No type		0X000		L:L13		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0000E1	No type		0X000		L:L14		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000271	No type		0X000		L:L15		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000271	No type		0X000		L:L16		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000272	No type		0X000		L:L17		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000273	No type		0X000		L:L18		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000274	No type		0X000		L:L19		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000275	No type		0X000		L:L20		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000275	No type		0X000		L:L21		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000275	No type		0X000		L:L22		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000275	No type		0X000		L:L1		_Function_initAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000276	Section		0X068		L:_Function_controlAD_code		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000276	No type		0X000		P:_controlAD		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000276	No type		0X000		L:L31		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000276	No type		0X000		L:L32		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000276	No type		0X000		L:L33		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000278	No type		0X000		L:L34		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027A	No type		0X000		L:L35		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027B	No type		0X000		L:L24		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027B	No type		0X000		L:L36		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027B	No type		0X000		L:L37		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027B	No type		0X000		L:L38		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027B	No type		0X000		L:L39		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027B	No type		0X000		L:L40		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027B	No type		0X000		L:L25		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027B	No type		0X000		L:L41		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027D	No type		0X000		L:L42		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027F	No type		0X000		L:L44		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027F	No type		0X000		L:L45		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00027F	No type		0X000		L:L43		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000282	No type		0X000		L:L46		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000293	No type		0X000		L:L47		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000297	No type		0X000		L:L48		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000299	No type		0X000		L:L49		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00029D	No type		0X000		L:L50		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00029D	No type		0X000		L:L51		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00029D	No type		0X000		L:L52		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00029E	No type		0X000		L:L53		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002A7	No type		0X000		L:L54		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002A9	No type		0X000		L:L55		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002A9	No type		0X000		L:L56		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002A9	No type		0X000		L:L57		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002A9	No type		0X000		L:L58		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002A9	No type		0X000		L:L59		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002A9	No type		0X000		L:L60		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002A9	No type		0X000		L:L61		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002A9	No type		0X000		L:L23		_Function_controlAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AA	No type		0X000		L:L63		_Function_getBAT_AD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AA	Section		0X008		L:_Function_getBAT_AD_code		_Function_getBAT_AD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AA	No type		0X000		P:_getBAT_AD		_Function_getBAT_AD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AA	No type		0X000		L:L65		_Function_getBAT_AD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AA	No type		0X000		L:L64		_Function_getBAT_AD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AD	No type		0X000		L:L62		_Function_getBAT_AD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AD	No type		0X000		L:L66		_Function_getBAT_AD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AD	No type		0X000		L:L67		_Function_getBAT_AD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AE	Section		0X00C		L:_Function_clearAD_code		_Function_clearAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AE	No type		0X000		L:L71		_Function_clearAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AE	No type		0X000		L:L70		_Function_clearAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AE	No type		0X000		L:L69		_Function_clearAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002AE	No type		0X000		P:_clearAD		_Function_clearAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002B0	No type		0X000		L:L72		_Function_clearAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002B2	No type		0X000		L:L73		_Function_clearAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002B3	No type		0X000		L:L76		_Function_clearAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002B3	No type		0X000		L:L68		_Function_clearAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002B3	No type		0X000		L:L74		_Function_clearAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002B3	No type		0X000		L:L75		_Function_clearAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002B4	No type		0X000		L:Letext		_Function_clearAD_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X0002B4	Section		0X010		L:_DATA_INIT_CODE		_DATA_INIT_CODE			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002B4	No type		0X000		L:_LedChangeBufSetting_initial_value		_DATA_INIT_CODE			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BC	Section		0X006		L:_Function_initLED_code		_Function_initLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BC	No type		0X000		P:_initLED		_Function_initLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BC	No type		0X000		L:L2		_Function_initLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BC	No type		0X000		L:L3		_Function_initLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BC	No type		0X000		L:L4		_Function_initLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BD	No type		0X000		L:L5		_Function_initLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BE	No type		0X000		L:L6		_Function_initLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BE	No type		0X000		L:L7		_Function_initLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BE	No type		0X000		L:L8		_Function_initLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BE	No type		0X000		L:L1		_Function_initLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BF	Section		0X112		L:_Function_controlLED_code		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BF	No type		0X000		P:_controlLED		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BF	No type		0X000		L:L38		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BF	No type		0X000		L:L39		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002BF	No type		0X000		L:L40		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002C7	No type		0X000		L:L41		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002C7	No type		0X000		L:L43		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002C7	No type		0X000		L:L42		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002C9	No type		0X000		L:L44		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002CA	No type		0X000		L:L46		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002CA	No type		0X000		L:L45		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002CB	No type		0X000		L:L47		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002CB	No type		0X000		L:L49		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002CB	No type		0X000		L:L10		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002CB	No type		0X000		L:L48		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002CD	No type		0X000		L:L52		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002CD	No type		0X000		L:L51		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002CD	No type		0X000		L:L50		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002D7	No type		0X000		L:L55		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002D7	No type		0X000		L:L54		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002D7	No type		0X000		L:L53		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002D8	No type		0X000		L:L56		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002E0	No type		0X000		L:L59		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002E0	No type		0X000		L:L58		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002E0	No type		0X000		L:L57		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002E1	No type		0X000		L:L60		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002E1	No type		0X000		L:L61		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002E2	No type		0X000		L:L16		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002E2	No type		0X000		L:L62		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002F2	No type		0X000		L:L63		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002F2	No type		0X000		L:L64		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002F2	No type		0X000		L:L65		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002F4	No type		0X000		L:L67		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002F4	No type		0X000		L:L66		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002F5	No type		0X000		L:L20		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X0002F5	No type		0X000		L:L68		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000305	No type		0X000		L:L69		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000305	No type		0X000		L:L70		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000305	No type		0X000		L:L71		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000307	No type		0X000		L:L72		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000307	No type		0X000		L:L73		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000308	No type		0X000		L:L26		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000308	No type		0X000		L:L74		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000308	No type		0X000		L:L75		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000308	No type		0X000		L:L76		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030A	No type		0X000		L:L79		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030A	No type		0X000		L:L80		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030A	No type		0X000		L:L77		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030A	No type		0X000		L:L78		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030B	No type		0X000		L:L14		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030B	No type		0X000		L:L81		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030B	No type		0X000		L:L82		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030B	No type		0X000		L:L83		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030D	No type		0X000		L:L84		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030D	No type		0X000		L:L85		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030D	No type		0X000		L:L86		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030D	No type		0X000		L:L87		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030E	No type		0X000		L:L12		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030E	No type		0X000		L:L88		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030E	No type		0X000		L:L90		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00030E	No type		0X000		L:L89		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000324	No type		0X000		L:L91		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000324	No type		0X000		L:L92		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000324	No type		0X000		L:L93		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000327	No type		0X000		L:L94		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000327	No type		0X000		L:L95		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000328	No type		0X000		L:L96		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000328	No type		0X000		L:L32		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00033E	No type		0X000		L:L98		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00033E	No type		0X000		L:L99		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00033E	No type		0X000		L:L97		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000341	No type		0X000		L:L100		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000341	No type		0X000		L:L101		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000342	No type		0X000		L:L102		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000342	No type		0X000		L:L103		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000342	No type		0X000		L:L104		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000342	No type		0X000		L:L35		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000344	No type		0X000		L:L13		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000344	No type		0X000		L:L108		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000344	No type		0X000		L:L105		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000344	No type		0X000		L:L36		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000344	No type		0X000		L:L109		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000344	No type		0X000		L:L106		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000344	No type		0X000		L:L33		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000344	No type		0X000		L:L107		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000347	No type		0X000		L:L9		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000347	No type		0X000		L:L114		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000347	No type		0X000		L:L113		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000347	No type		0X000		L:L112		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000347	No type		0X000		L:L111		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000347	No type		0X000		L:L110		_Function_controlLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000348	Section		0X04A		L:_Function_setLED_code		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000348	No type		0X000		L:_setLED		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000348	No type		0X000		L:L122		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000348	No type		0X000		L:L123		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000348	No type		0X000		L:Letext		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000348	No type		0X000		L:L124		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000355	No type		0X000		L:L151		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000356	No type		0X000		L:L125		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000356	No type		0X000		L:L126		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000356	No type		0X000		L:L127		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000356	No type		0X000		L:L118		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000357	No type		0X000		L:L128		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000358	No type		0X000		L:L129		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000359	No type		0X000		L:L130		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00035A	No type		0X000		L:L131		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00035A	No type		0X000		L:L119		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00035B	No type		0X000		L:L132		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00035C	No type		0X000		L:L133		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00035D	No type		0X000		L:L134		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00035E	No type		0X000		L:L135		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00035E	No type		0X000		L:L120		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00035F	No type		0X000		L:L136		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000360	No type		0X000		L:L137		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000361	No type		0X000		L:L138		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000362	No type		0X000		L:L121		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000362	No type		0X000		L:L139		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000368	No type		0X000		L:L140		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000369	No type		0X000		L:L141		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00036A	No type		0X000		L:L143		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00036A	No type		0X000		L:L145		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00036A	No type		0X000		L:L117		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00036A	No type		0X000		L:L146		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00036A	No type		0X000		L:L144		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00036A	No type		0X000		L:L142		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00036C	No type		0X000		L:L149		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00036C	No type		0X000		L:L148		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00036C	No type		0X000		L:L147		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00036C	No type		0X000		L:L115		_Function_setLED_code			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00036D	No type		0X000		P:__Get2ByteRamToLArg		__Get2ByteParaToDest@RTL			2get2bytepara.o
+0X00036D	Section		0X046		L:__Get2ByteParaToDest@RTL		__Get2ByteParaToDest@RTL			2get2bytepara.o
+0X000376	No type		0X000		P:__Get2ByteRomToLArg		__Get2ByteParaToDest@RTL			2get2bytepara.o
+0X000382	No type		0X000		P:__Get2ByteRamToRArg		__Get2ByteParaToDest@RTL			2get2bytepara.o
+0X000387	No type		0X000		P:__Get2ByteRomToRArg		__Get2ByteParaToDest@RTL			2get2bytepara.o
+0X00038C	No type		0X000		L:@@Mov2ByteToRArg		__Get2ByteParaToDest@RTL			2get2bytepara.o
+0X000390	Section		0X060		L:__Get2BytePara@RTL		__Get2BytePara@RTL			2get2bytepara.o
+0X000390	No type		0X000		P:__Get2ByteRamRam		__Get2BytePara@RTL			2get2bytepara.o
+0X000396	No type		0X000		P:__Get2ByteRamRom		__Get2BytePara@RTL			2get2bytepara.o
+0X0003A0	No type		0X000		P:__Get2ByteRomRam		__Get2BytePara@RTL			2get2bytepara.o
+0X0003A6	No type		0X000		P:__Get2ByteRomRom		__Get2BytePara@RTL			2get2bytepara.o
+0X0003B0	No type		0X000		P:__Get2ByteRamCst		__Get2BytePara@RTL			2get2bytepara.o
+0X0003B5	No type		0X000		P:__Store2ByteLArg2HL		__Get2BytePara@RTL			2get2bytepara.o
+0X0003C0	Section		0X012		L:__SLLong@RTL		__SLLong@RTL			2sllong.o
+0X0003C0	No type		0X000		P:__SLLong2Ram		__SLLong@RTL			2sllong.o
+0X0003C0	No type		0X000		L:@@Shift		__SLLong@RTL			2sllong.o
+0X0003C7	No type		0X000		L:@@RET		__SLLong@RTL			2sllong.o
+0X0003C9	Section		0X016		L:__SRLong@RTL		__SRLong@RTL			2srlong.o
+0X0003C9	No type		0X000		P:__SRLong2Ram		__SRLong@RTL			2srlong.o
+0X0003C9	No type		0X000		L:@@Shift		__SRLong@RTL			2srlong.o
+0X0003D2	No type		0X000		L:@@RET		__SRLong@RTL			2srlong.o
+0X0003D4	Section		0X00E		L:__Mov2ByteRamToLArg@RTL		__Mov2ByteRamToLArg@RTL			2movramtolarg.o
+0X0003D4	No type		0X000		P:__Mov2ByteRamToLArg		__Mov2ByteRamToLArg@RTL			2movramtolarg.o
+0X0003DB	Section		0X01E		L:__Mov4ByteRamToLArg@RTL		__Mov4ByteRamToLArg@RTL			2movramtolarg.o
+0X0003DB	No type		0X000		P:__Mov4ByteRamToLArg		__Mov4ByteRamToLArg@RTL			2movramtolarg.o
+0X0003EA	Section		0X00E		L:__Mov2ByteRamToRArg@RTL		__Mov2ByteRamToRArg@RTL			2movramtorarg.o
+0X0003EA	No type		0X000		P:__Mov2ByteRamToRArg		__Mov2ByteRamToRArg@RTL			2movramtorarg.o
+0X0003F1	Section		0X014		L:__Mov4ByteRamToRArg@RTL		__Mov4ByteRamToRArg@RTL			2movramtorarg.o
+0X0003F1	No type		0X000		P:__Mov4ByteRamToRArg		__Mov4ByteRamToRArg@RTL			2movramtorarg.o
+
+
+Address		Type		Size(Byte)		Public/Local		Segment			Module
+0X000000	Section		0X005		L:crt0@data		crt0@data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X000000	Object		0X001		P:H		crt0@data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X000000	BitObject		0X001		L:_led_init		_led_c_GlobalBitDataPool0			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000001	Object		0X001		P:L		crt0@data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X000002	Object		0X001		P:X		crt0@data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X000003	Object		0X001		P:I		crt0@data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X000004	Object		0X001		P:T		crt0@data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0X000005	Section		0X006		L:_InterruptBackupData		_InterruptBackupData			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000005	Object		0X001		L:_bufT		_InterruptBackupData			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000006	Object		0X001		L:_bufI		_InterruptBackupData			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000007	Object		0X001		L:_bufY		_InterruptBackupData			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000008	Object		0X001		L:_bufZ		_InterruptBackupData			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000009	Object		0X001		L:_bufR		_InterruptBackupData			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00000A	Object		0X001		L:_bufX		_InterruptBackupData			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00000B	Object		0X001		L:W0		_VirtualReg			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00000B	Section		0X004		L:_VirtualReg		_VirtualReg			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00000B	Object		0X001		L:W0		_VirtualReg			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00000B	Section		0X004		L:_VirtualReg		_VirtualReg			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00000C	Object		0X001		L:W1		_VirtualReg			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00000C	Object		0X001		L:W1		_VirtualReg			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00000D	Object		0X001		L:W2		_VirtualReg			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00000D	Object		0X001		L:W2		_VirtualReg			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00000E	Object		0X001		L:W3		_VirtualReg			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00000E	Object		0X001		L:W3		_VirtualReg			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X00000F	Section		0X001		L:_led_c_GlobalBitDataPool0		_led_c_GlobalBitDataPool0			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000010	Object		0X001		L:__SrcLArg0		__runtime_arg			2sllong.o
+0X000010	Section		0X00A		L:__runtime_arg		__runtime_arg			2movramtolarg.o
+0X000010	Section		0X00A		L:__runtime_arg		__runtime_arg			2sllong.o
+0X000010	Object		0X001		P:__SrcLArg0		__runtime_arg			2get2bytepara.o
+0X000010	Section		0X00A		L:__runtime_arg		__runtime_arg			2get2bytepara.o
+0X000010	Section		0X00A		L:__runtime_arg		__runtime_arg			2cmplong.o
+0X000010	Object		0X001		L:__SrcLArg0		__runtime_arg			2cmplong.o
+0X000010	Object		0X001		L:__SrcLArg0		__runtime_arg			2movramtolarg.o
+0X000010	Section		0X00A		L:__runtime_arg		__runtime_arg			2srlong.o
+0X000010	Object		0X001		L:__SrcLArg0		__runtime_arg			2srlong.o
+0X000010	Section		0X00A		L:__runtime_arg		__runtime_arg			2movramtorarg.o
+0X000010	Object		0X001		L:__SrcLArg0		__runtime_arg			2movramtorarg.o
+0X000011	Object		0X001		L:__SrcLArg1		__runtime_arg			2cmplong.o
+0X000011	Object		0X001		P:__SrcLArg1		__runtime_arg			2get2bytepara.o
+0X000011	Object		0X001		L:__SrcLArg1		__runtime_arg			2srlong.o
+0X000011	Object		0X001		L:__SrcLArg1		__runtime_arg			2sllong.o
+0X000011	Object		0X001		L:__SrcLArg1		__runtime_arg			2movramtolarg.o
+0X000011	Object		0X001		L:__SrcLArg1		__runtime_arg			2movramtorarg.o
+0X000012	Object		0X001		L:__SrcLArg2		__runtime_arg			2cmplong.o
+0X000012	Object		0X001		P:__SrcLArg2		__runtime_arg			2get2bytepara.o
+0X000012	Object		0X001		L:__SrcLArg2		__runtime_arg			2sllong.o
+0X000012	Object		0X001		L:__SrcLArg2		__runtime_arg			2srlong.o
+0X000012	Object		0X001		L:__SrcLArg2		__runtime_arg			2movramtolarg.o
+0X000012	Object		0X001		L:__SrcLArg2		__runtime_arg			2movramtorarg.o
+0X000013	Object		0X001		L:__SrcLArg3		__runtime_arg			2movramtolarg.o
+0X000013	Object		0X001		L:__SrcLArg3		__runtime_arg			2sllong.o
+0X000013	Object		0X001		L:__SrcLArg3		__runtime_arg			2srlong.o
+0X000013	Object		0X001		L:__SrcLArg3		__runtime_arg			2cmplong.o
+0X000013	Object		0X001		P:__SrcLArg3		__runtime_arg			2get2bytepara.o
+0X000013	Object		0X001		L:__SrcLArg3		__runtime_arg			2movramtorarg.o
+0X000014	Object		0X001		L:__SrcRArg0		__runtime_arg			2cmplong.o
+0X000014	Object		0X001		P:__SrcRArg0		__runtime_arg			2get2bytepara.o
+0X000014	Object		0X001		L:__SrcRArg0		__runtime_arg			2movramtorarg.o
+0X000015	Object		0X001		P:__SrcRArg1		__runtime_arg			2get2bytepara.o
+0X000015	Object		0X001		L:__SrcRArg1		__runtime_arg			2cmplong.o
+0X000015	Object		0X001		L:__SrcRArg1		__runtime_arg			2movramtorarg.o
+0X000016	Object		0X001		L:__SrcRArg2		__runtime_arg			2cmplong.o
+0X000016	Object		0X001		P:__SrcRArg2		__runtime_arg			2get2bytepara.o
+0X000016	Object		0X001		L:__SrcRArg2		__runtime_arg			2movramtorarg.o
+0X000017	Object		0X001		L:__SrcRArg3		__runtime_arg			2cmplong.o
+0X000017	Object		0X001		P:__SrcRArg3		__runtime_arg			2get2bytepara.o
+0X000017	Object		0X001		L:__SrcRArg3		__runtime_arg			2movramtorarg.o
+0X000018	Object		0X001		L:R0		__runtime_arg			2get2bytepara.o
+0X000019	Object		0X001		L:R1		__runtime_arg			2get2bytepara.o
+0X00001A	Object		0X001		P:_bat_in_cnt		_bat_in_cnt@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001A	Section		0X001		L:_bat_in_cnt@segment		_bat_in_cnt@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001B	Object		0X001		P:_dc_in_cnt		_dc_in_cnt@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001B	Section		0X001		L:_dc_in_cnt@segment		_dc_in_cnt@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001C	Object		0X001		P:_fcout2		_fcout2@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001C	Section		0X001		L:_fcout2@segment		_fcout2@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001D	Object		0X001		P:_fcout1		_fcout1@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001D	Section		0X001		L:_fcout1@segment		_fcout1@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001E	Section		0X001		L:_dc_type@segment		_dc_type@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001E	Object		0X001		P:_dc_type		_dc_type@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00001F	Object		0X001		L:_adBattIdx		_adBattIdx@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X00001F	Section		0X001		L:_adBattIdx@segment		_adBattIdx@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000020	Section		0X002		L:_ad_val_sum@segment		_ad_val_sum@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000020	Object		0X002		L:_ad_val_sum		_ad_val_sum@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000022	Object		0X002		L:_ad_value		_ad_value@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000022	Section		0X002		L:_ad_value@segment		_ad_value@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000024	Object		0X001		L:_led_status		_led_status@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000024	Section		0X001		L:_led_status@segment		_led_status@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000025	Section		0X010		L:_LedChangeBufSetting@segment		_LedChangeBufSetting@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000025	Object		0X010		L:_LedChangeBufSetting		_LedChangeBufSetting@segment			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000035	Section		0X000		L:_Function_dc_DET_data		_Function_dc_DET_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000035	Section		0X000		L:_Function_init_IO_data		_Function_init_IO_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000035	Section		0X000		L:_Function_initTimer_data		_Function_initTimer_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000035	Section		0X000		L:_Function_isr_isr_data		_Function_isr_isr_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000035	Section		0X001		L:_Function_setLED_data		_Function_setLED_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000035	Object		0X001		P:_setLED_arg@0		_Function_setLED_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000035	Section		0X000		L:_Function_getBAT_AD_data		_Function_getBAT_AD_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000035	Section		0X000		L:_Function_clearAD_data		_Function_clearAD_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000035	Section		0X000		L:_Function_initLED_data		_Function_initLED_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000035	Object		0X001		L:_controlAD_data@0		_Function_controlAD_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000035	Section		0X004		L:_Function_controlAD_data		_Function_controlAD_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000035	Section		0X000		L:_Function_initAD_data		_Function_initAD_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000036	Section		0X003		L:_Function_controlLED_data		_Function_controlLED_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000036	Object		0X002		P:_controlLED_arg@0		_Function_controlLED_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000036	Object		0X001		L:_controlAD_data@1		_Function_controlAD_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000037	Object		0X001		L:_controlAD_data@2		_Function_controlAD_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000038	Object		0X001		L:_controlLED_data@0		_Function_controlLED_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0X000038	Object		0X001		L:_controlAD_data@3		_Function_controlAD_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0X000039	Object		0X001		L:_main_data@0		_Function_main_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X000039	Section		0X002		L:_Function_main_data		_Function_main_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0X00003A	Object		0X001		L:_main_data@1		_Function_main_data			C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+
+
+Module Table [Unit:Word]
+
+Code Size	%Code Percent	Data Size	%Code Percent	Module Type	Module(Library)
+--------------------------------------------------------------------------------------------------------
+0x000003C4	94.509804		0x0000000D	20.312500		user code  	C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o
+0x00000046	6.862745		0x00000005	7.812500		crt0 code  	C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o
+0x000000FC	24.705882		0x0000000D	20.312500		user code  	C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o
+0x00000188	38.431373		0x0000001A	40.625000		user code  	C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o
+0x00000022	3.333333		0x0000000A	15.625000		system lib 	2cmplong.o(c_stdlib_100.lib)
+0x00000054	8.235294		0x00000000	0.000000		system lib 	1sn8cc_lib.o(c_stdlib_100.lib)
+0x00000012	1.764706		0x0000000A	15.625000		system lib 	2sllong.o(c_stdlib_100.lib)
+0x00000016	2.156863		0x0000000A	15.625000		system lib 	2srlong.o(c_stdlib_100.lib)
+0x0000002C	4.313725		0x0000000A	15.625000		system lib 	2movramtolarg.o(c_stdlib_100.lib)
+0x00000022	3.333333		0x0000000A	15.625000		system lib 	2movramtorarg.o(c_stdlib_100.lib)
+0x000000A6	16.274510		0x0000000A	15.625000		system lib 	2get2bytepara.o(c_stdlib_100.lib)
+--------------------------------------------------------------------------------------------------------
+
+Total ROM size: 1020[0x3FC]
+Has used: 1018[0x3FA](99.803922) words		[composed by: all code segments size]
+Remains: 2[0x2](0.196078) words
+
+Total RAM size: 64[0x40]
+Has used: 59[0x3B](92.187500) words		[composed by: all code segments size]
+Remains: 5[0x5](7.812500) words
+
+Overlay Map:
+
+Call Tree:
+In File: "C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\crt0.o"
+
+In File: "C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\main.o"
+_main ---> _initTimer
+_main ---> _init_IO
+_main ---> _initAD
+_main ---> _initLED
+_main ---> __ClearWatchDogTimer
+_main ---> _controlAD
+_main ---> _dc_DET
+_main ---> _controlLED
+_main ---> _clearAD
+_main ---> _getBAT_AD
+
+In File: "C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\ad.o"
+_controlAD ---> __Get2ByteRamToLArg
+_controlAD ---> __SLLong2Ram
+_controlAD ---> __SRLong2Ram
+
+In File: "C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Obj\led.o"
+_controlLED ---> __Get2ByteRamCst
+_controlLED ---> __CmpULong
+_controlLED ---> _setLED
+_controlLED ---> __CmpLong
+_controlLED ---> __Get2ByteRamRam
+
+In File: "2cmplong.o"
+
+In File: "2get2bytepara.o"
+__Get2ByteRamToRArg ---> __Mov2ByteRamToRArg
+__Get2ByteRamRam ---> __Get2ByteRamToLArg
+__Get2ByteRamRam ---> __Mov2ByteRamToRArg
+__Get2ByteRamRom ---> __Get2ByteRamToLArg
+__Get2ByteRomRam ---> __Get2ByteRomToLArg
+__Get2ByteRomRam ---> __Mov2ByteRamToRArg
+__Get2ByteRomRom ---> __Get2ByteRomToLArg
+__Get2ByteRamCst ---> __Get2ByteRamToLArg
+
+In File: "1sn8cc_lib.o"
+
+In File: "2sllong.o"
+__SLLong2Ram ---> __Store2ByteLArg2HL
+
+In File: "2srlong.o"
+__SRLong2Ram ---> __Store2ByteLArg2HL
+
+In File: "2movramtolarg.o"
+
+In File: "2movramtorarg.o"
+__Mov4ByteRamToRArg ---> __Mov2ByteRamToRArg
+
+
+Detail CallTree
+
+Stack Level : Function Name
+0:_main
+1:		_initTimer
+1:		_init_IO
+1:		_initAD
+1:		_initLED
+1:		__ClearWatchDogTimer
+1:		_controlAD
+2:				__Get2ByteRamToLArg
+2:				__SLLong2Ram
+3:						__Store2ByteLArg2HL
+2:				__SRLong2Ram
+3:						__Store2ByteLArg2HL
+1:		_dc_DET
+1:		_controlLED
+2:				__Get2ByteRamCst
+3:						__Get2ByteRamToLArg
+2:				__CmpULong
+2:				_setLED
+2:				__CmpLong
+2:				__Get2ByteRamRam
+3:						__Get2ByteRamToLArg
+3:						__Mov2ByteRamToRArg
+1:		_clearAD
+1:		_getBAT_AD
+0:__Mov4ByteRamToRArg
+1:		__Mov2ByteRamToRArg
+1:_isr_isr
+
+
+Optimize result:
+The "_SELECTBANK" instruction total number:0
+After optimize,erased "_SELECTBANK" instruction number:0
+Optimize percent with "_SELECTBANK" instruction:0%
+
+
+
+Entry point = 0x00000080
+

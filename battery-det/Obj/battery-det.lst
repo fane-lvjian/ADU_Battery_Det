@@ -1,0 +1,1896 @@
+start listing elf file - .\Bin/battery-det.out
+
+
+------------------begin data section------------------
+
+Start   Length(Byte)  Type  Name                             Source File
+000000    0X05        Data  crt0@data                        
+0X0005    0X06        Data  _InterruptBackupData             
+0X000B    0X04        Data  _VirtualReg                      
+0X000F    0X01        Data  _led_c_GlobalBitDataPool0        C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\led.c
+0X0010    0X0A        Data  __runtime_arg                    
+0X001A    0X01        Data  _bat_in_cnt@segment              C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\main.c
+0X001B    0X01        Data  _dc_in_cnt@segment               C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\main.c
+0X001C    0X01        Data  _fcout2@segment                  C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\main.c
+0X001D    0X01        Data  _fcout1@segment                  C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\main.c
+0X001E    0X01        Data  _dc_type@segment                 C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\main.c
+0X001F    0X01        Data  _adBattIdx@segment               C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\ad.c
+0X0020    0X02        Data  _ad_val_sum@segment              C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\ad.c
+0X0022    0X02        Data  _ad_value@segment                C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\ad.c
+0X0024    0X01        Data  _led_status@segment              C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\led.c
+0X0025    0X10        Data  _LedChangeBufSetting@segment     C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\led.c
+0X0035    0X01        Data  _Function_setLED_data            C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\ad.c
+0X0035    0X04        Data  _Function_controlAD_data         C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\ad.c
+0X0036    0X03        Data  _Function_controlLED_data        C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\led.c
+0X0039    0X02        Data  _Function_main_data              C:\Users\HUAWEI\Desktop\battery-det(1)\battery-det\battery-det\Src\main.c
+
+
+crt0@data SEGMENT DATA INBANK
+	H	DS	1
+	L	DS	1
+	X	DS	1
+	I	DS	1
+	T	DS	1
+
+_InterruptBackupData SEGMENT DATA INBANK
+	_bufT	DS	1
+	_bufI	DS	1
+	_bufY	DS	1
+	_bufZ	DS	1
+	_bufR	DS	1
+	_bufX	DS	1
+
+_VirtualReg SEGMENT DATA INBANK
+	W0	DS	1
+	W1	DS	1
+	W2	DS	1
+	W3	DS	1
+
+_led_c_GlobalBitDataPool0 SEGMENT DATA INBANK
+	_led_init	DSBIT	1
+
+__runtime_arg SEGMENT DATA INBANK
+	__SrcLArg0	DS	1
+	__SrcLArg1	DS	1
+	__SrcLArg2	DS	1
+	__SrcLArg3	DS	1
+	__SrcRArg0	DS	1
+	__SrcRArg1	DS	1
+	__SrcRArg2	DS	1
+	__SrcRArg3	DS	1
+	R0	DS	1
+	R1	DS	1
+
+_bat_in_cnt@segment SEGMENT DATA INBANK
+	_bat_in_cnt	DS	1
+
+_dc_in_cnt@segment SEGMENT DATA INBANK
+	_dc_in_cnt	DS	1
+
+_fcout2@segment SEGMENT DATA INBANK
+	_fcout2	DS	1
+
+_fcout1@segment SEGMENT DATA INBANK
+	_fcout1	DS	1
+
+_dc_type@segment SEGMENT DATA INBANK
+	_dc_type	DS	1
+
+_adBattIdx@segment SEGMENT DATA INBANK
+	_adBattIdx	DS	1
+
+_ad_val_sum@segment SEGMENT DATA INBANK
+	_ad_val_sum	DS	2
+
+_ad_value@segment SEGMENT DATA INBANK
+	_ad_value	DS	2
+
+_led_status@segment SEGMENT DATA INBANK
+	_led_status	DS	1
+
+_LedChangeBufSetting@segment SEGMENT DATA INBANK
+	_LedChangeBufSetting	DS	16
+
+_Function_setLED_data SEGMENT DATA INBANK
+	_setLED_arg@0	DS	1
+
+_Function_controlAD_data SEGMENT DATA INBANK
+	_controlAD_data@0	DS	1
+	_controlAD_data@1	DS	1
+	_controlAD_data@2	DS	1
+	_controlAD_data@3	DS	1
+
+_Function_controlLED_data SEGMENT DATA INBANK
+	_controlLED_arg@0	DS	2
+	_controlLED_data@0	DS	1
+
+_Function_main_data SEGMENT DATA INBANK
+	_main_data@0	DS	1
+	_main_data@1	DS	1
+
+
+------------------begin disassembly code------------------
+
+                  	                  	
+                  	                  	;-------------------------------------------------------------------------------
+                  	                  	;	Crt0 For Chip SN8P2711A	
+                  	                  	;-------------------------------------------------------------------------------
+                  	                  	
+                  	                  	CHIP SN8P2711A	
+                  	                  	
+                  	                  	IF H == 0
+                  	                  		public H
+                  	                  	ENDIF
+                  	                  	IF L == 0
+                  	                  		public L
+                  	                  	ENDIF
+                  	                  	IF X == 0
+                  	                  		public X
+                  	                  	ENDIF
+                  	                  	public I
+                  	                  	public T
+                  	                  	
+                  	                  	public __ClearWatchDogTimer
+                  	                  	public __ClrRAM
+                  	                  	PUBLIC _sgv_init_entry
+                  	                  	
+                  	                  	Extern CODE _main
+                  	                  	
+                  	                  	;-------------------------------------------------------------------------------
+                  	                  	;			Data section
+                  	                  	;-------------------------------------------------------------------------------
+                  	                  	crt0@data SEGMENT DATA AT 0x00 INBANK
+                  	                  		IF H == 0
+                  	                  			H ds 1
+                  	                  		ENDIF
+                  	                  		IF L == 0
+                  	                  			L ds 1
+                  	                  		ENDIF
+                  	                  		IF X == 0
+                  	                  			X ds 1
+                  	                  		ENDIF
+                  	                  		I ds 1
+                  	                  		T	ds 1
+                  	                  	
+                  	                  	;-------------------------------------------------------------------------------
+                  	                  	;			Code section
+                  	                  	;-------------------------------------------------------------------------------
+                  	                  	crt0@code SEGMENT CODE AT 0x0 INBANK
+                  	                  		ORG	0				;Code section start
+                  	                  		jmp		_sgv_init_entry		;Reset vector
+    0: 800A       	JMP 0x000A
+    1: 0000       	NOP
+    2: 0000       	NOP
+    3: 0000       	NOP
+    4: 0000       	NOP
+    5: 0000       	NOP
+    6: 0000       	NOP
+                  	                  		org 7
+                  	                  		nop
+    7: 0000       	NOP
+_interrupt@_isr_isr:
+    8: 8060       	JMP 0x0060
+.CODE:
+    9: F9F9       	CALL 0x39F9
+_SGV_INIT_CODE_BEGIN:
+                  	                  	
+                  	                  	_SGV_INIT_CODE_BEGIN segment CODE  
+                  	                  	_sgv_init_entry:
+                  	                  	;Initialize STKP
+                  	                  		MOV A,# 0x7F
+    A: 2D7F       	MOV A, #7fh
+                  	                  		B0MOV STKP, A 
+    B: 2FDF       	B0MOV STKP, A
+                  	                  		
+                  	                  		CALL __ClearWatchDogTimer;
+    C: C01B       	CALL 0x001B
+                  	                  		CALL __ClrRAM;
+    D: C01E       	CALL 0x001E
+_SGV_INIT_CODE:
+    E: 2D01       	MOV A, #01h
+    F: 1F1E       	MOV 0x1E, A
+_SGV_INIT_CODE:
+   10: 3402       	B0MOV 0x84, #02h
+   11: 33B4       	B0MOV 0x83, #B4h
+   12: 2D00       	MOV A, #00h
+   13: 2F00       	B0MOV 0x00, A
+   14: 2D25       	MOV A, #25h
+   15: 2F01       	B0MOV 0x01, A
+   16: 2D10       	MOV A, #10h
+   17: 2F02       	B0MOV 0x02, A
+   18: C036       	CALL 0x0036
+_SGV_INIT_CODE_END:
+                  	                  	
+                  	                  	; Define a null segment
+                  	                  	_SGV_INIT_CODE segment CODE BANK 0x0 INBANK
+                  	                  	
+                  	                  	_SGV_INIT_CODE_END segment CODE
+                  	                  	
+                  	                  	;-------------------------------------------------------------------------------
+                  	                  	; Clear Watch dog timer
+                  	                  	;-------------------------------------------------------------------------------
+                  	                  		CALL __ClearWatchDogTimer;
+   19: C01B       	CALL 0x001B
+                  	                  		JMP _main	
+   1A: 8080       	JMP 0x0080
+__ClearWatchDogTimer:
+                  	                  	
+                  	                  	;-------------------------------------------------------------------------------
+                  	                  	; Clear Watch dog timer
+                  	                  	;-------------------------------------------------------------------------------
+                  	                  	__ClearWatchDogTimer:
+                  	                  		MOV  A, #5AH
+   1B: 2D5A       	MOV A, #5ah
+                  	                  		B0MOV  WDTR, A
+   1C: 2FCC       	B0MOV WDTR, A
+                  	                  		RET
+   1D: 0E00       	RET
+__ClrRAM:
+                  	                  		
+                  	                  	;-------------------------------------------------------------------------------
+                  	                  	; ClrRAM
+                  	                  	; Use index @YZ to clear RAM 
+                  	                  	;-------------------------------------------------------------------------------
+                  	                  	
+                  	                  	__ClrRAM:
+                  	                  	
+                  	                  		CLR 		Y
+   1E: 2B84       	CLR 0x84
+                  	                  		B0MOV		Z,#0x3f
+   1F: 333F       	B0MOV 0x83, #3Fh
+ClrRAM10:
+                  	                  	
+                  	                  	ClrRAM10:
+                  	                  		CLR 		@YZ
+   20: 2BE7       	CLR 0xE7
+                  	                  		DECMS		Z
+   21: 2683       	DECMS 0x83
+                  	                  		JMP 		ClrRAM10
+   22: 8020       	JMP 0x0020
+                  	                  		CLR 		@YZ
+   23: 2BE7       	CLR 0xE7
+                  	                  	
+                  	                  		RET
+   24: 0E00       	RET
+__CmpULong@RTSegment:
+   25: 2D80       	MOV A, #80h
+   26: 0311       	B0ADD 0x11, A
+   27: 0315       	B0ADD 0x15, A
+__CmpULong:
+   28: 2E11       	B0MOV A, 0x11
+   29: 0715       	CMPRS A, 0x15
+   2A: 8030       	JMP 0x0030
+@@Judge_equal:
+   2B: 2E10       	B0MOV A, 0x10
+   2C: 0714       	CMPRS A, 0x14
+   2D: 8030       	JMP 0x0030
+   2E: 2D00       	MOV A, #00h
+   2F: 8035       	JMP 0x0035
+@@Judge_unequal:
+   30: 7A86       	B0BTS1 0x86.2
+   31: 8034       	JMP 0x0034
+   32: 2D01       	MOV A, #01h
+   33: 8035       	JMP 0x0035
+@@Result_Less:
+   34: 2DFF       	MOV A, #ffh
+@@EndLable:
+   35: 0E00       	RET
+sn8cc_lib@RTSegment:
+   36: 2E02       	B0MOV A, 0x02
+   37: 2F03       	B0MOV 0x03, A
+   38: 2D00       	MOV A, #00h
+   39: 2F02       	B0MOV 0x02, A
+LOOP:
+   3A: 0D00       	MOVC
+   3B: 2F04       	B0MOV 0x04, A
+   3C: 2E00       	B0MOV A, 0x00
+   3D: 2C84       	XCH A, 0x84
+   3E: 2F00       	B0MOV 0x00, A
+   3F: 2E01       	B0MOV A, 0x01
+   40: 2C83       	XCH A, 0x83
+   41: 2F01       	B0MOV 0x01, A
+   42: 2E04       	B0MOV A, 0x04
+   43: 2FE7       	B0MOV @YZ, A
+   44: 2603       	DECMS 0x03
+   45: 8047       	JMP 0x0047
+   46: 805F       	JMP 0x005F
+_Continue1:
+   47: 2D01       	MOV A, #01h
+   48: 1383       	ADD 0x83, A
+   49: 2D00       	MOV A, #00h
+   4A: 1184       	ADC 0x84, A
+   4B: 2E82       	B0MOV A, R
+   4C: 2FE7       	B0MOV @YZ, A
+   4D: 2603       	DECMS 0x03
+   4E: 8050       	JMP 0x0050
+   4F: 805F       	JMP 0x005F
+_Continue2:
+   50: 2D01       	MOV A, #01h
+   51: 1383       	ADD 0x83, A
+   52: 2D00       	MOV A, #00h
+   53: 1184       	ADC 0x84, A
+   54: 2E00       	B0MOV A, 0x00
+   55: 2C84       	XCH A, 0x84
+   56: 2F00       	B0MOV 0x00, A
+   57: 2E01       	B0MOV A, 0x01
+   58: 2C83       	XCH A, 0x83
+   59: 2F01       	B0MOV 0x01, A
+   5A: 2D01       	MOV A, #01h
+   5B: 1383       	ADD 0x83, A
+   5C: 2D00       	MOV A, #00h
+   5D: 1184       	ADC 0x84, A
+   5E: 803A       	JMP 0x003A
+_END:
+   5F: 0E00       	RET
+_Function_isr_isr_code:
+   60: 0400       	PUSH
+   61: 2E02       	B0MOV A, 0x02
+   62: 2F0A       	B0MOV 0x0A, A
+   63: 2E84       	B0MOV A, Y
+   64: 2F07       	B0MOV 0x07, A
+   65: 2E83       	B0MOV A, Z
+   66: 2F08       	B0MOV 0x08, A
+   67: 2E82       	B0MOV A, R
+   68: 2F09       	B0MOV 0x09, A
+   69: 2E04       	B0MOV A, 0x04
+   6A: 2F05       	B0MOV 0x05, A
+   6B: 2E03       	B0MOV A, 0x03
+   6C: 2F06       	B0MOV 0x06, A
+L5:
+                  	                  	/*****************************************************************************/
+                  	                  	/*  File  : Main.c                                                           */
+                  	                  	/*                                                                           */
+                  	                  	/*  DATE:           Author:         Description:                             */
+                  	                  	/*  -----------     -------------   ---------------------------------------- */
+                  	                  	/*  dd-mmm-2019     LJ              Initial version                          */
+                  	                  	/*                                                                           */
+                  	                  	/*****************************************************************************/
+                  	                  	#ifndef	_MAIN_C_
+                  	                  	#define	_MAIN_C_
+                  	                  	/*===========================================================================*/
+                  	                  	/* Include Header Files                                                      */
+                  	                  	/*===========================================================================*/
+                  	                  	#include <sn8p2711a.h>
+                  	                  	#include "ad.h"
+                  	                  	#include "led.h"
+                  	                  	/*===========================================================================*/
+                  	                  	/* Global Variable Definition                                                */
+                  	                  	/*===========================================================================*/
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* Local Macro Definition                                                    */
+                  	                  	/*===========================================================================*/
+                  	                  	typedef enum {
+                  	                  		DC_IN,		/* dc in */
+                  	                  		BAT_IN,		/* battery in */
+                  	                  	} DC_TYPE;
+                  	                  	
+                  	                  	#define DC_DEBOUNCING_TIMES		8
+                  	                  	/*===========================================================================*/
+                  	                  	/* Local Type Definition                                                     */
+                  	                  	///*===========================================================================*/
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* Local Variable Definition                                                 */
+                  	                  	/*===========================================================================*/
+                  	                  	unsigned char fcout1;
+                  	                  	unsigned char fcout2;
+                  	                  	unsigned char dc_in_cnt;
+                  	                  	unsigned char bat_in_cnt;
+                  	                  	
+                  	                  	DC_TYPE dc_type = BAT_IN;
+                  	                  	/*===========================================================================*/
+                  	                  	/* Local Function Prototype Declaration                                      */
+                  	                  	/*===========================================================================*/
+                  	                  	void initTimer(void);
+                  	                  	void init_IO(void);
+                  	                  	void dc_DET(void);
+                  	                  	/*===========================================================================*/
+                  	                  	/* Function Definition                                                       */
+                  	                  	/*===========================================================================*/
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* timer interrupt                                                           */
+                  	                  	/*   arg : void                                                              */
+                  	                  	/*   ret : void                                                              */
+                  	                  	/*===========================================================================*/
+                  	                  	void __interrupt[0x8] isr(void)
+                  	                  	{
+                  	                  		if (FTC0IRQ == 1){
+   6D: 7DC8       	B0BTS1 INTRQ.5
+   6E: 8072       	JMP 0x0072
+L8:
+                  	                  			FTC0IRQ = 0;
+   6F: 65C8       	B0BCLR INTRQ.5
+L11:
+                  	                  			fcout1++;
+   70: 161D       	INCMS 0x1D
+   71: 0000       	NOP
+L12:
+                  	                  		}
+                  	                  	}
+   72: 2E05       	B0MOV A, 0x05
+   73: 2F04       	B0MOV 0x04, A
+   74: 2E06       	B0MOV A, 0x06
+   75: 2F03       	B0MOV 0x03, A
+   76: 2E0A       	B0MOV A, 0x0A
+   77: 2F02       	B0MOV 0x02, A
+   78: 2E07       	B0MOV A, 0x07
+   79: 2F84       	B0MOV Y, A
+   7A: 2E08       	B0MOV A, 0x08
+   7B: 2F83       	B0MOV Z, A
+   7C: 2E09       	B0MOV A, 0x09
+   7D: 2F82       	B0MOV R, A
+   7E: 0500       	POP
+   7F: 0F00       	RETI
+_Function_main_code:
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* main                                                                      */
+                  	                  	/*   arg : void                                                              */
+                  	                  	/*   ret : void                                                              */
+                  	                  	/*===========================================================================*/
+                  	                  	void main (void)
+                  	                  	{
+                  	                  	 	long int temp_bat = 0x0000;
+   80: 2B39       	CLR 0x39
+   81: 2B3A       	CLR 0x3A
+L29:
+                  	                  	
+                  	                  		/* timer initialize */
+                  	                  		initTimer();
+   82: C0A7       	CALL 0x00A7
+L30:
+                  	                  		/* IO initialize */
+                  	                  		init_IO();
+   83: C0B5       	CALL 0x00B5
+L31:
+                  	                  		/* AD initialize */
+                  	                  		initAD();
+   84: C0D2       	CALL 0x00D2
+L32:
+                  	                  		/* LED initialize */
+                  	                  		initLED();
+   85: C2BC       	CALL 0x02BC
+L17:
+                  	                  			/* clear watchdog timer */
+                  	                  			_ClearWatchDogTimer();
+   86: C01B       	CALL 0x001B
+L36:
+                  	                  	
+                  	                  			/* 60ms */
+                  	                  			if (fcout1 == 60) {
+   87: 1E1D       	MOV A, 0x1D
+   88: 063C       	CMPRS A, #3Ch
+   89: 808F       	JMP 0x008F
+L37:
+                  	                  				fcout1 = 0;
+   8A: 2B1D       	CLR 0x1D
+L40:
+                  	                  				fcout2++;
+   8B: 161C       	INCMS 0x1C
+   8C: 0000       	NOP
+L41:
+                  	                  				/* AD sampling every 60ms */
+                  	                  				controlAD();
+   8D: C276       	CALL 0x0276
+L42:
+                  	                  				/* dc detect every 60ms */
+                  	                  				dc_DET();
+   8E: C0BD       	CALL 0x00BD
+L43:
+                  	                  			}
+                  	                  	
+                  	                  			/* Control once every 240ms interval */
+                  	                  			if (fcout2 >= 4) {
+   8F: 1E1C       	MOV A, 0x1C
+   90: 2404       	SUB A, #04h
+   91: 7A86       	B0BTS1 0x86.2
+   92: 80A6       	JMP 0x00A6
+L46:
+                  	                  				fcout2 = 0;
+   93: 2B1C       	CLR 0x1C
+L49:
+                  	                  				/* Set LED = GREEN when DC_IN detect */
+                  	                  				if (dc_type == DC_IN){
+   94: 1E1E       	MOV A, 0x1E
+   95: 0600       	CMPRS A, #00h
+   96: 809D       	JMP 0x009D
+L50:
+                  	                  					controlLED(4096);
+   97: 2B36       	CLR 0x36
+   98: 2D10       	MOV A, #10h
+   99: 1F37       	MOV 0x37, A
+   9A: C2BF       	CALL 0x02BF
+L53:
+                  	                  					clearAD();
+   9B: C2AE       	CALL 0x02AE
+L54:
+                  	                  				} else { //According to AD value set LED When BAT_IN detect
+   9C: 80A6       	JMP 0x00A6
+L24:
+                  	                  					temp_bat = getBAT_AD();
+   9D: C2AA       	CALL 0x02AA
+   9E: 1F39       	MOV 0x39, A
+   9F: 2E82       	B0MOV A, R
+   A0: 1F3A       	MOV 0x3A, A
+L59:
+                  	                  					controlLED(temp_bat);
+   A1: 1E39       	MOV A, 0x39
+   A2: 1F36       	MOV 0x36, A
+   A3: 1E3A       	MOV A, 0x3A
+   A4: 1F37       	MOV 0x37, A
+   A5: C2BF       	CALL 0x02BF
+L60:
+                  	                  	
+                  	                  		while (1) {
+   A6: 8086       	JMP 0x0086
+_Function_initTimer_code:
+                  	                  				}
+                  	                  			}
+                  	                  		}
+                  	                  	}
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* initTimer                                                                 */
+                  	                  	/*   arg : void                                                              */
+                  	                  	/*   ret : void                                                              */
+                  	                  	/*===========================================================================*/
+                  	                  	void initTimer(void)
+                  	                  	{            
+                  	                  		//INTRQ = 0x00;
+                  	                  		//INTEN = 0x00;
+                  	                  	
+                  	                  		/* Reset TC0 */
+                  	                  		//TC0M = 0x00;
+                  	                  	    /* Set the TC0 Rate and auto reload features */
+                  	                  		TC0M = 0x34; //Fcpu/32
+   A7: 2D34       	MOV A, #34h
+   A8: 2FDA       	B0MOV TC0M, A
+L73:
+                  	                  		/* Set TC0C and TC0R to get the interval of TC0. */
+                  	                  		TC0C = 0x7D; //1ms
+   A9: 2D7D       	MOV A, #7dh
+   AA: 2FDB       	B0MOV TC0C, A
+L74:
+                  	                  		TC0R = 0x7D; //1ms
+   AB: 2FCD       	B0MOV TC0R, A
+L75:
+                  	                  		/* Clear TC0IRQ */
+                  	                  		FTC0IRQ = 0;
+   AC: 65C8       	B0BCLR INTRQ.5
+L76:
+                  	                  		/* Select TC0 Fcpu internal clock source */
+                  	                  		FTC0X8 = 0; //Fcpu
+   AD: 62D8       	B0BCLR T0M.2
+L77:
+                  	                  		/* Set TC0 auto reload function */
+                  	                  		FTC0IEN = 1;
+   AE: 6DC9       	B0BSET INTEN.5
+L78:
+                  	                  		INTRQ = 0x00;
+   AF: 2BC8       	CLR 0xC8
+L79:
+                  	                  		INTEN = 0x20;
+   B0: 2D20       	MOV A, #20h
+   B1: 2FC9       	B0MOV INTEN, A
+L80:
+                  	                  		FTC0ENB = 1;			/*only use TC0*/
+   B2: 6FDA       	B0BSET TC0M.7
+L81:
+                  	                  		FGIE = 1;				/*enable interrupt*/
+   B3: 6FDF       	B0BSET STKP.7
+L82:
+                  	                  	
+                  	                  		return;	
+                  	                  	}
+   B4: 0E00       	RET
+_Function_init_IO_code:
+                  	                  	 
+                  	                  	/*===========================================================================*/
+                  	                  	/* init_IO                                                                   */
+                  	                  	/*   arg : void                                                              */
+                  	                  	/*   ret : void                                                              */
+                  	                  	/*===========================================================================*/
+                  	                  	void init_IO(void)
+                  	                  	{
+                  	                  		/* P0.2 set input */
+                  	                  		FP02M = 0;
+   B5: 62B8       	B0BCLR P0M.2
+L89:
+                  	                  		/* P0.3 set output */
+                  	                  		FP03M = 1;
+   B6: 6BB8       	B0BSET P0M.3
+L90:
+                  	                  		FP03 = 0;
+   B7: 63D0       	B0BCLR P0.3
+L91:
+                  	                  		/* P4.4 set output */
+                  	                  		FP44M = 1;
+   B8: 6CC4       	B0BSET P4M.4
+L92:
+                  	                  		FP44 = 0;
+   B9: 64D4       	B0BCLR P4.4
+L93:
+                  	                  		/* P5.3 set output */
+                  	                  		FP53M = 1;
+   BA: 6BC5       	B0BSET P5M.3
+L94:
+                  	                  		FP53 = 0;
+   BB: 63D5       	B0BCLR P5.3
+L95:
+                  	                  	
+                  	                  		return;
+                  	                  	}
+   BC: 0E00       	RET
+_Function_dc_DET_code:
+                  	                  	/*===========================================================================*/
+                  	                  	/* dc_DET                                                                    */
+                  	                  	/*   arg : void                                                              */
+                  	                  	/*   ret : void                                                              */
+                  	                  	/*===========================================================================*/
+                  	                  	void dc_DET(void)
+                  	                  	{
+                  	                  		/* DC_IN when low level detected */
+                  	                  		if (FP02 == 0){
+   BD: 72D0       	B0BTS0 P0.2
+   BE: 80C8       	JMP 0x00C8
+L108:
+                  	                  			bat_in_cnt = 0;
+   BF: 2B1A       	CLR 0x1A
+L111:
+                  	                  			dc_in_cnt++;
+   C0: 161B       	INCMS 0x1B
+   C1: 0000       	NOP
+L112:
+                  	                  			if (dc_in_cnt == DC_DEBOUNCING_TIMES){
+   C2: 1E1B       	MOV A, 0x1B
+   C3: 0608       	CMPRS A, #08h
+   C4: 80D1       	JMP 0x00D1
+L113:
+                  	                  				dc_in_cnt = 0;
+   C5: 2B1B       	CLR 0x1B
+L116:
+                  	                  				dc_type = DC_IN;
+   C6: 2B1E       	CLR 0x1E
+L117:
+                  	                  			}
+                  	                  		} else {//BAT IN when high level detected
+   C7: 80D1       	JMP 0x00D1
+L99:
+                  	                  			dc_in_cnt = 0;
+   C8: 2B1B       	CLR 0x1B
+L124:
+                  	                  			bat_in_cnt++;
+   C9: 161A       	INCMS 0x1A
+   CA: 0000       	NOP
+L125:
+                  	                  			if (bat_in_cnt == DC_DEBOUNCING_TIMES){
+   CB: 1E1A       	MOV A, 0x1A
+   CC: 0608       	CMPRS A, #08h
+   CD: 80D1       	JMP 0x00D1
+L126:
+                  	                  				bat_in_cnt = 0;
+   CE: 2B1A       	CLR 0x1A
+L129:
+                  	                  				dc_type = BAT_IN;
+   CF: 2D01       	MOV A, #01h
+   D0: 1F1E       	MOV 0x1E, A
+L130:
+                  	                  			}
+                  	                  		}	
+                  	                  	
+                  	                  		return;
+                  	                  	}
+   D1: 0E00       	RET
+_Function_initAD_code:
+                  	                  	/*****************************************************************************/
+                  	                  	/*  File  : ad.c                                                             */
+                  	                  	/*                                                                           */
+                  	                  	/*  DATE:           Author:         Description:                             */
+                  	                  	/*  -----------     -------------   ---------------------------------------- */
+                  	                  	/*  dd-mmm-2019     LJ              Initial version                          */
+                  	                  	/*                                                                           */
+                  	                  	/*****************************************************************************/
+                  	                  	#ifndef	_AD_C_
+                  	                  	#define	_AD_C_
+                  	                  	/*===========================================================================*/
+                  	                  	/* Include Header Files                                                      */
+                  	                  	/*===========================================================================*/
+                  	                  	#include <sn8p2711a.h>
+                  	                  	#include "ad.h"
+                  	                  	/*===========================================================================*/
+                  	                  	/* Global Variable Definition                                                */
+                  	                  	/*===========================================================================*/
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* Local Macro Definition                                                    */
+                  	                  	/*===========================================================================*/
+                  	                  	#define AD_SAMPLING_TIMES_SHIFT		(3)
+                  	                  	#define	AD_SAMPLING_TIMES			(0x01 << AD_SAMPLING_TIMES_SHIFT)
+                  	                  	/*===========================================================================*/
+                  	                  	/* Local Type Definition                                                     */
+                  	                  	/*===========================================================================*/
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* Local Variable Definition                                                 */
+                  	                  	/*===========================================================================*/
+                  	                  	static long int ad_value;
+                  	                  	static long int ad_val_sum;
+                  	                  	static unsigned char adBattIdx;
+                  	                  	/*===========================================================================*/
+                  	                  	/* Local Function Prototype Declaration                                      */
+                  	                  	/*===========================================================================*/
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* Function Definition                                                       */
+                  	                  	/*===========================================================================*/
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* initAD                                                                    */
+                  	                  	/*   arg : void                                                              */
+                  	                  	/*   ret : void                                                              */
+                  	                  	/*===========================================================================*/
+                  	                  	
+                  	                  	void initAD(void)
+                  	                  	{
+                  	                  		ad_value = 0x0000;
+   D2: 2B22       	CLR 0x22
+   D3: 2B23       	CLR 0x23
+L5:
+                  	                  		ad_val_sum = 0x0000;
+   D4: 2B20       	CLR 0x20
+   D5: 2B21       	CLR 0x21
+L6:
+                  	                  		adBattIdx = 0;	
+   D6: 2B1F       	CLR 0x1F
+L7:
+                  	                  	
+                  	                  		/* Reset ADC */
+                  	                  		//ADM = 0x00;
+                  	                  		/* Set ADC Clock Rate */
+                  	                  		ADR = 0x40;
+   D7: 2D40       	MOV A, #40h
+   D8: 2FB3       	B0MOV ADR, A
+L8:
+                  	                  		/* Set the ADC reference voltage high source */
+                  	                  		FEVHENB = 0;
+   D9: 67AF       	B0BCLR VERFH.7
+L9:
+                  	                  		/* Select internal AD reference source. */
+                  	                  		VREFH = 0x02;
+   DA: 2D02       	MOV A, #02h
+   DB: 2FAF       	B0MOV VERFH, A
+L10:
+                  	                  		/* Set the ADC input channel */
+                  	                  		P4CON = 0x08;
+   DC: 2D08       	MOV A, #08h
+   DD: 2FAE       	B0MOV P4CON, A
+L11:
+                  	                  		FP43M = 0;
+   DE: 63C4       	B0BCLR P4M.3
+L12:
+                  	                  		P4UR = 0x00;
+   DF: 2BE4       	CLR 0xE4
+L13:
+                  	                  		/* Enable ADC */
+                  	                  		FADENB = 1;
+   E0: 6FB1       	B0BSET 0xB1.7
+L14:
+                  	                  		/* 100us wait */
+                  	                  		NOP(400);
+   E1: 0000       	NOP
+   E2: 0000       	NOP
+   E3: 0000       	NOP
+   E4: 0000       	NOP
+   E5: 0000       	NOP
+   E6: 0000       	NOP
+   E7: 0000       	NOP
+   E8: 0000       	NOP
+   E9: 0000       	NOP
+   EA: 0000       	NOP
+   EB: 0000       	NOP
+   EC: 0000       	NOP
+   ED: 0000       	NOP
+   EE: 0000       	NOP
+   EF: 0000       	NOP
+   F0: 0000       	NOP
+   F1: 0000       	NOP
+   F2: 0000       	NOP
+   F3: 0000       	NOP
+   F4: 0000       	NOP
+   F5: 0000       	NOP
+   F6: 0000       	NOP
+   F7: 0000       	NOP
+   F8: 0000       	NOP
+   F9: 0000       	NOP
+   FA: 0000       	NOP
+   FB: 0000       	NOP
+   FC: 0000       	NOP
+   FD: 0000       	NOP
+   FE: 0000       	NOP
+   FF: 0000       	NOP
+  100: 0000       	NOP
+  101: 0000       	NOP
+  102: 0000       	NOP
+  103: 0000       	NOP
+  104: 0000       	NOP
+  105: 0000       	NOP
+  106: 0000       	NOP
+  107: 0000       	NOP
+  108: 0000       	NOP
+  109: 0000       	NOP
+  10A: 0000       	NOP
+  10B: 0000       	NOP
+  10C: 0000       	NOP
+  10D: 0000       	NOP
+  10E: 0000       	NOP
+  10F: 0000       	NOP
+  110: 0000       	NOP
+  111: 0000       	NOP
+  112: 0000       	NOP
+  113: 0000       	NOP
+  114: 0000       	NOP
+  115: 0000       	NOP
+  116: 0000       	NOP
+  117: 0000       	NOP
+  118: 0000       	NOP
+  119: 0000       	NOP
+  11A: 0000       	NOP
+  11B: 0000       	NOP
+  11C: 0000       	NOP
+  11D: 0000       	NOP
+  11E: 0000       	NOP
+  11F: 0000       	NOP
+  120: 0000       	NOP
+  121: 0000       	NOP
+  122: 0000       	NOP
+  123: 0000       	NOP
+  124: 0000       	NOP
+  125: 0000       	NOP
+  126: 0000       	NOP
+  127: 0000       	NOP
+  128: 0000       	NOP
+  129: 0000       	NOP
+  12A: 0000       	NOP
+  12B: 0000       	NOP
+  12C: 0000       	NOP
+  12D: 0000       	NOP
+  12E: 0000       	NOP
+  12F: 0000       	NOP
+  130: 0000       	NOP
+  131: 0000       	NOP
+  132: 0000       	NOP
+  133: 0000       	NOP
+  134: 0000       	NOP
+  135: 0000       	NOP
+  136: 0000       	NOP
+  137: 0000       	NOP
+  138: 0000       	NOP
+  139: 0000       	NOP
+  13A: 0000       	NOP
+  13B: 0000       	NOP
+  13C: 0000       	NOP
+  13D: 0000       	NOP
+  13E: 0000       	NOP
+  13F: 0000       	NOP
+  140: 0000       	NOP
+  141: 0000       	NOP
+  142: 0000       	NOP
+  143: 0000       	NOP
+  144: 0000       	NOP
+  145: 0000       	NOP
+  146: 0000       	NOP
+  147: 0000       	NOP
+  148: 0000       	NOP
+  149: 0000       	NOP
+  14A: 0000       	NOP
+  14B: 0000       	NOP
+  14C: 0000       	NOP
+  14D: 0000       	NOP
+  14E: 0000       	NOP
+  14F: 0000       	NOP
+  150: 0000       	NOP
+  151: 0000       	NOP
+  152: 0000       	NOP
+  153: 0000       	NOP
+  154: 0000       	NOP
+  155: 0000       	NOP
+  156: 0000       	NOP
+  157: 0000       	NOP
+  158: 0000       	NOP
+  159: 0000       	NOP
+  15A: 0000       	NOP
+  15B: 0000       	NOP
+  15C: 0000       	NOP
+  15D: 0000       	NOP
+  15E: 0000       	NOP
+  15F: 0000       	NOP
+  160: 0000       	NOP
+  161: 0000       	NOP
+  162: 0000       	NOP
+  163: 0000       	NOP
+  164: 0000       	NOP
+  165: 0000       	NOP
+  166: 0000       	NOP
+  167: 0000       	NOP
+  168: 0000       	NOP
+  169: 0000       	NOP
+  16A: 0000       	NOP
+  16B: 0000       	NOP
+  16C: 0000       	NOP
+  16D: 0000       	NOP
+  16E: 0000       	NOP
+  16F: 0000       	NOP
+  170: 0000       	NOP
+  171: 0000       	NOP
+  172: 0000       	NOP
+  173: 0000       	NOP
+  174: 0000       	NOP
+  175: 0000       	NOP
+  176: 0000       	NOP
+  177: 0000       	NOP
+  178: 0000       	NOP
+  179: 0000       	NOP
+  17A: 0000       	NOP
+  17B: 0000       	NOP
+  17C: 0000       	NOP
+  17D: 0000       	NOP
+  17E: 0000       	NOP
+  17F: 0000       	NOP
+  180: 0000       	NOP
+  181: 0000       	NOP
+  182: 0000       	NOP
+  183: 0000       	NOP
+  184: 0000       	NOP
+  185: 0000       	NOP
+  186: 0000       	NOP
+  187: 0000       	NOP
+  188: 0000       	NOP
+  189: 0000       	NOP
+  18A: 0000       	NOP
+  18B: 0000       	NOP
+  18C: 0000       	NOP
+  18D: 0000       	NOP
+  18E: 0000       	NOP
+  18F: 0000       	NOP
+  190: 0000       	NOP
+  191: 0000       	NOP
+  192: 0000       	NOP
+  193: 0000       	NOP
+  194: 0000       	NOP
+  195: 0000       	NOP
+  196: 0000       	NOP
+  197: 0000       	NOP
+  198: 0000       	NOP
+  199: 0000       	NOP
+  19A: 0000       	NOP
+  19B: 0000       	NOP
+  19C: 0000       	NOP
+  19D: 0000       	NOP
+  19E: 0000       	NOP
+  19F: 0000       	NOP
+  1A0: 0000       	NOP
+  1A1: 0000       	NOP
+  1A2: 0000       	NOP
+  1A3: 0000       	NOP
+  1A4: 0000       	NOP
+  1A5: 0000       	NOP
+  1A6: 0000       	NOP
+  1A7: 0000       	NOP
+  1A8: 0000       	NOP
+  1A9: 0000       	NOP
+  1AA: 0000       	NOP
+  1AB: 0000       	NOP
+  1AC: 0000       	NOP
+  1AD: 0000       	NOP
+  1AE: 0000       	NOP
+  1AF: 0000       	NOP
+  1B0: 0000       	NOP
+  1B1: 0000       	NOP
+  1B2: 0000       	NOP
+  1B3: 0000       	NOP
+  1B4: 0000       	NOP
+  1B5: 0000       	NOP
+  1B6: 0000       	NOP
+  1B7: 0000       	NOP
+  1B8: 0000       	NOP
+  1B9: 0000       	NOP
+  1BA: 0000       	NOP
+  1BB: 0000       	NOP
+  1BC: 0000       	NOP
+  1BD: 0000       	NOP
+  1BE: 0000       	NOP
+  1BF: 0000       	NOP
+  1C0: 0000       	NOP
+  1C1: 0000       	NOP
+  1C2: 0000       	NOP
+  1C3: 0000       	NOP
+  1C4: 0000       	NOP
+  1C5: 0000       	NOP
+  1C6: 0000       	NOP
+  1C7: 0000       	NOP
+  1C8: 0000       	NOP
+  1C9: 0000       	NOP
+  1CA: 0000       	NOP
+  1CB: 0000       	NOP
+  1CC: 0000       	NOP
+  1CD: 0000       	NOP
+  1CE: 0000       	NOP
+  1CF: 0000       	NOP
+  1D0: 0000       	NOP
+  1D1: 0000       	NOP
+  1D2: 0000       	NOP
+  1D3: 0000       	NOP
+  1D4: 0000       	NOP
+  1D5: 0000       	NOP
+  1D6: 0000       	NOP
+  1D7: 0000       	NOP
+  1D8: 0000       	NOP
+  1D9: 0000       	NOP
+  1DA: 0000       	NOP
+  1DB: 0000       	NOP
+  1DC: 0000       	NOP
+  1DD: 0000       	NOP
+  1DE: 0000       	NOP
+  1DF: 0000       	NOP
+  1E0: 0000       	NOP
+  1E1: 0000       	NOP
+  1E2: 0000       	NOP
+  1E3: 0000       	NOP
+  1E4: 0000       	NOP
+  1E5: 0000       	NOP
+  1E6: 0000       	NOP
+  1E7: 0000       	NOP
+  1E8: 0000       	NOP
+  1E9: 0000       	NOP
+  1EA: 0000       	NOP
+  1EB: 0000       	NOP
+  1EC: 0000       	NOP
+  1ED: 0000       	NOP
+  1EE: 0000       	NOP
+  1EF: 0000       	NOP
+  1F0: 0000       	NOP
+  1F1: 0000       	NOP
+  1F2: 0000       	NOP
+  1F3: 0000       	NOP
+  1F4: 0000       	NOP
+  1F5: 0000       	NOP
+  1F6: 0000       	NOP
+  1F7: 0000       	NOP
+  1F8: 0000       	NOP
+  1F9: 0000       	NOP
+  1FA: 0000       	NOP
+  1FB: 0000       	NOP
+  1FC: 0000       	NOP
+  1FD: 0000       	NOP
+  1FE: 0000       	NOP
+  1FF: 0000       	NOP
+  200: 0000       	NOP
+  201: 0000       	NOP
+  202: 0000       	NOP
+  203: 0000       	NOP
+  204: 0000       	NOP
+  205: 0000       	NOP
+  206: 0000       	NOP
+  207: 0000       	NOP
+  208: 0000       	NOP
+  209: 0000       	NOP
+  20A: 0000       	NOP
+  20B: 0000       	NOP
+  20C: 0000       	NOP
+  20D: 0000       	NOP
+  20E: 0000       	NOP
+  20F: 0000       	NOP
+  210: 0000       	NOP
+  211: 0000       	NOP
+  212: 0000       	NOP
+  213: 0000       	NOP
+  214: 0000       	NOP
+  215: 0000       	NOP
+  216: 0000       	NOP
+  217: 0000       	NOP
+  218: 0000       	NOP
+  219: 0000       	NOP
+  21A: 0000       	NOP
+  21B: 0000       	NOP
+  21C: 0000       	NOP
+  21D: 0000       	NOP
+  21E: 0000       	NOP
+  21F: 0000       	NOP
+  220: 0000       	NOP
+  221: 0000       	NOP
+  222: 0000       	NOP
+  223: 0000       	NOP
+  224: 0000       	NOP
+  225: 0000       	NOP
+  226: 0000       	NOP
+  227: 0000       	NOP
+  228: 0000       	NOP
+  229: 0000       	NOP
+  22A: 0000       	NOP
+  22B: 0000       	NOP
+  22C: 0000       	NOP
+  22D: 0000       	NOP
+  22E: 0000       	NOP
+  22F: 0000       	NOP
+  230: 0000       	NOP
+  231: 0000       	NOP
+  232: 0000       	NOP
+  233: 0000       	NOP
+  234: 0000       	NOP
+  235: 0000       	NOP
+  236: 0000       	NOP
+  237: 0000       	NOP
+  238: 0000       	NOP
+  239: 0000       	NOP
+  23A: 0000       	NOP
+  23B: 0000       	NOP
+  23C: 0000       	NOP
+  23D: 0000       	NOP
+  23E: 0000       	NOP
+  23F: 0000       	NOP
+  240: 0000       	NOP
+  241: 0000       	NOP
+  242: 0000       	NOP
+  243: 0000       	NOP
+  244: 0000       	NOP
+  245: 0000       	NOP
+  246: 0000       	NOP
+  247: 0000       	NOP
+  248: 0000       	NOP
+  249: 0000       	NOP
+  24A: 0000       	NOP
+  24B: 0000       	NOP
+  24C: 0000       	NOP
+  24D: 0000       	NOP
+  24E: 0000       	NOP
+  24F: 0000       	NOP
+  250: 0000       	NOP
+  251: 0000       	NOP
+  252: 0000       	NOP
+  253: 0000       	NOP
+  254: 0000       	NOP
+  255: 0000       	NOP
+  256: 0000       	NOP
+  257: 0000       	NOP
+  258: 0000       	NOP
+  259: 0000       	NOP
+  25A: 0000       	NOP
+  25B: 0000       	NOP
+  25C: 0000       	NOP
+  25D: 0000       	NOP
+  25E: 0000       	NOP
+  25F: 0000       	NOP
+  260: 0000       	NOP
+  261: 0000       	NOP
+  262: 0000       	NOP
+  263: 0000       	NOP
+  264: 0000       	NOP
+  265: 0000       	NOP
+  266: 0000       	NOP
+  267: 0000       	NOP
+  268: 0000       	NOP
+  269: 0000       	NOP
+  26A: 0000       	NOP
+  26B: 0000       	NOP
+  26C: 0000       	NOP
+  26D: 0000       	NOP
+  26E: 0000       	NOP
+  26F: 0000       	NOP
+  270: 0000       	NOP
+L15:
+                  	                  		/* Select ADC input Channel(AIN3) */
+                  	                  		FCHS2 = 0;
+  271: 62B1       	B0BCLR 0xB1.2
+L17:
+                  	                  		FCHS1 = 1;
+  272: 69B1       	B0BSET 0xB1.1
+L18:
+                  	                  		FCHS0 = 1;
+  273: 68B1       	B0BSET 0xB1.0
+L19:
+                  	                  		/* Enable ADC input channel */
+                  	                  		FGCHS = 1;
+  274: 6CB1       	B0BSET 0xB1.4
+L20:
+                  	                  	
+                  	                  		return;
+                  	                  	}
+  275: 0E00       	RET
+_Function_controlAD_code:
+                  	                  	/*===========================================================================*/
+                  	                  	/* controlAD                                                                 */
+                  	                  	/*   arg : void                                                              */
+                  	                  	/*   ret : void                                                              */
+                  	                  	/*===========================================================================*/
+                  	                  	void controlAD(void)
+                  	                  	{
+                  	                  		long int ad_val_H = 0;
+  276: 2B35       	CLR 0x35
+  277: 2B36       	CLR 0x36
+L34:
+                  	                  		long int ad_val = 0;
+  278: 2B37       	CLR 0x37
+  279: 2B38       	CLR 0x38
+L35:
+                  	                  		
+                  	                  		/* Start ADC */
+                  	                  		FADS = 1;
+  27A: 6EB1       	B0BSET 0xB1.6
+L24:
+                  	                  		/* Check the ADC status flag */
+                  	                  		while(FEOC == 0){
+  27B: 7DB1       	B0BTS1 0xB1.5
+  27C: 827B       	JMP 0x027B
+L42:
+                  	                  			;
+                  	                  		}
+                  	                  	
+                  	                  		if (FP02 != 0) {
+  27D: 7AD0       	B0BTS1 0xD0.2
+  27E: 82A9       	JMP 0x02A9
+L43:
+                  	                  			ad_val_H = ADB;	          //Get AD convert result high byte
+  27F: 2EB2       	B0MOV A, ADB
+  280: 1F35       	MOV 0x35, A
+  281: 2B36       	CLR 0x36
+L46:
+                  	                  			ad_val = (ad_val_H << 4)|(ADR & 0x0f);
+  282: 2D00       	MOV A, #00h
+  283: 2F00       	B0MOV 0x00, A
+  284: 2D0B       	MOV A, #0bh
+  285: 2F01       	B0MOV 0x01, A
+  286: 3400       	B0MOV 0x84, #00h
+  287: 3335       	B0MOV 0x83, #35h
+  288: 2D04       	MOV A, #04h
+  289: C36D       	CALL 0x036D
+  28A: C3C0       	CALL 0x03C0
+  28B: 2EB3       	B0MOV A, ADR
+  28C: 2A0F       	AND A, #0Fh
+  28D: 2B0E       	CLR 0x0E
+  28E: 180B       	OR A, 0x0B
+  28F: 1F37       	MOV 0x37, A
+  290: 2E0C       	B0MOV A, 0x0C
+  291: 180E       	OR A, 0x0E
+  292: 1F38       	MOV 0x38, A
+L47:
+                  	                  			
+                  	                  			/* Get AD value 8 times and average operation */
+                  	                  			ad_val_sum = ad_val_sum + ad_val;
+  293: 1E37       	MOV A, 0x37
+  294: 1320       	ADD 0x20, A
+  295: 1E38       	MOV A, 0x38
+  296: 1121       	ADC 0x21, A
+L48:
+                  	                  			adBattIdx ++;
+  297: 161F       	INCMS 0x1F
+  298: 0000       	NOP
+L49:
+                  	                  			if (adBattIdx >= AD_SAMPLING_TIMES) {
+  299: 1E1F       	MOV A, 0x1F
+  29A: 2408       	SUB A, #08h
+  29B: 7A86       	B0BTS1 0x86.2
+  29C: 82A9       	JMP 0x02A9
+L50:
+                  	                  				adBattIdx = 0;
+  29D: 2B1F       	CLR 0x1F
+L53:
+                  	                  				ad_value = ad_val_sum >> AD_SAMPLING_TIMES_SHIFT;
+  29E: 2D00       	MOV A, #00h
+  29F: 2F00       	B0MOV 0x00, A
+  2A0: 2D22       	MOV A, #22h
+  2A1: 2F01       	B0MOV 0x01, A
+  2A2: 3400       	B0MOV 0x84, #00h
+  2A3: 3320       	B0MOV 0x83, #20h
+  2A4: 2D03       	MOV A, #03h
+  2A5: C36D       	CALL 0x036D
+  2A6: C3C9       	CALL 0x03C9
+L54:
+                  	                  				ad_val_sum = 0x0000;
+  2A7: 2B20       	CLR 0x20
+  2A8: 2B21       	CLR 0x21
+L55:
+                  	                  			}
+                  	                  		}
+                  	                  	
+                  	                  		return;
+                  	                  	}
+  2A9: 0E00       	RET
+_Function_getBAT_AD_code:
+                  	                  	/*===========================================================================*/
+                  	                  	/* getBAT_AD                                                                 */
+                  	                  	/*   arg : void                                                              */
+                  	                  	/*   ret : value of ADC                                                      */
+                  	                  	/*===========================================================================*/
+                  	                  	long int getBAT_AD(void)
+                  	                  	{
+                  	                  		return (ad_value);
+  2AA: 1E23       	MOV A, 0x23
+  2AB: 2F82       	B0MOV R, A
+  2AC: 1E22       	MOV A, 0x22
+L66:
+                  	                  	}
+  2AD: 0E00       	RET
+_Function_clearAD_code:
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* clearAD                                                                   */
+                  	                  	/*   arg : void                                                              */
+                  	                  	/*   ret : void                                                              */
+                  	                  	/*===========================================================================*/
+                  	                  	void clearAD(void)
+                  	                  	{
+                  	                  		ad_value = 0x0000;
+  2AE: 2B22       	CLR 0x22
+  2AF: 2B23       	CLR 0x23
+L72:
+                  	                  		ad_val_sum = 0x0000;
+  2B0: 2B20       	CLR 0x20
+  2B1: 2B21       	CLR 0x21
+L73:
+                  	                  		adBattIdx = 0;
+  2B2: 2B1F       	CLR 0x1F
+L74:
+                  	                  		
+                  	                  		return ;
+                  	                  	}
+  2B3: 0E00       	RET
+Letext:
+  2B4: 0FFF       	RETI
+  2B5: 09FF       	RRCM 0xFF
+  2B6: 0A43       	RLC 0x43
+  2B7: 09CC       	RRCM 0xCC
+  2B8: 0A10       	RLC 0x10
+  2B9: 0999       	RRCM 0x99
+  2BA: 09DD       	RRCM 0xDD
+  2BB: 0000       	NOP
+_Function_initLED_code:
+                  	                  	/*****************************************************************************/
+                  	                  	/*  File  : led.c                                                            */
+                  	                  	/*                                                                           */
+                  	                  	/*  DATE:           Author:         Description:                             */
+                  	                  	/*  -----------     -------------   ---------------------------------------- */
+                  	                  	/*  dd-mmm-2019     LJ              Initial version                          */
+                  	                  	/*                                                                           */
+                  	                  	/*****************************************************************************/
+                  	                  	#ifndef	_LED_C_
+                  	                  	#define	_LED_C_
+                  	                  	/*===========================================================================*/
+                  	                  	/* Include Header Files                                                      */
+                  	                  	/*===========================================================================*/
+                  	                  	#include <sn8p2711a.h>
+                  	                  	#include "led.h"
+                  	                  	/*===========================================================================*/
+                  	                  	/* Global Variable Definition                                                */
+                  	                  	/*===========================================================================*/
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* Local Macro Definition                                                    */
+                  	                  	/*===========================================================================*/
+                  	                  	#define LED_GREEN			(0)
+                  	                  	#define LED_YELLOW			(1)
+                  	                  	#define LED_RED				(2)
+                  	                  	#define LED_RED_BLINK		(3)
+                  	                  	#define LED_TYPE_NUM		(4)
+                  	                  	
+                  	                  	#define THRESHOLD_H			(0)
+                  	                  	#define THRESHOLD_L			(1)
+                  	                  	#define THRESHOLD_NUM		(2)
+                  	                  	/*===========================================================================*/
+                  	                  	/* Local Type Definition                                                     */
+                  	                  	/*===========================================================================*/
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* Local Variable Definition                                                 */
+                  	                  	/*===========================================================================*/
+                  	                  	
+                  	                  	static unsigned char led_status;
+                  	                  	static bit	led_init;
+                  	                  	
+                  	                  	static long int LedChangeBufSetting[LED_TYPE_NUM][THRESHOLD_NUM] = {
+                  	                  		 /* upper threshold */ /* lower threshold */
+                  	                  		{		4095,				2559}, /* LED_GREEN(12v~7.5v) */
+                  	                  		{		2627,				2508}, /* LED_YELLOW(7.7~7.35v) */
+                  	                  		{		2576,				2457}, /* LED_RED(7.55~7.2v) */
+                  	                  		{		2525,				0}     /* LED_RED_BLINK(7.4v~0v) */
+                  	                  	};
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* Local Function Prototype Declaration                                      */
+                  	                  	/*===========================================================================*/
+                  	                  	static void setLED(unsigned char led_type);
+                  	                  	/*===========================================================================*/
+                  	                  	/* Function Definition                                                       */
+                  	                  	/*===========================================================================*/
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* initLED                                                                   */
+                  	                  	/*   arg : void                                                              */
+                  	                  	/*   ret : void                                                              */
+                  	                  	/*===========================================================================*/
+                  	                  	void initLED(void)
+                  	                  	{
+                  	                  		led_status = LED_GREEN;
+  2BC: 2B24       	CLR 0x24
+L5:
+                  	                  		led_init = 1;
+  2BD: 480F       	BSET 0x0F.0
+L6:
+                  	                  	
+                  	                  		return;
+                  	                  	}
+  2BE: 0E00       	RET
+_Function_controlLED_code:
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* controlLED                                                                */
+                  	                  	/*   arg : void                                                              */
+                  	                  	/*   ret : void                                                              */
+                  	                  	/*===========================================================================*/
+                  	                  	void controlLED(long int ad_val)
+                  	                  	{
+                  	                  		unsigned char led_set;
+                  	                  	
+                  	                  		/* DC_IN */
+                  	                  		if (ad_val == 4096) {
+  2BF: 3400       	B0MOV 0x84, #00h
+  2C0: 3336       	B0MOV 0x83, #36h
+  2C1: 2D00       	MOV A, #00h
+  2C2: 3210       	B0MOV 0x82, #10h
+  2C3: C3B0       	CALL 0x03B0
+  2C4: C028       	CALL 0x0028
+  2C5: 7886       	B0BTS1 0x86.0
+  2C6: 82CB       	JMP 0x02CB
+L41:
+                  	                  			setLED(LED_GREEN);
+  2C7: 2B35       	CLR 0x35
+  2C8: C348       	CALL 0x0348
+L44:
+                  	                  			led_init = 1;
+  2C9: 480F       	BSET 0x0F.0
+L45:
+                  	                  		} else {
+  2CA: 8347       	JMP 0x0347
+L10:
+                  	                  			/* According to current AD value set LED status when system reset */
+                  	                  			if (led_init == 1) {
+  2CB: 580F       	BTS1 0x0F.0
+  2CC: 830E       	JMP 0x030E
+L50:
+                  	                  				if(ad_val > 0)
+  2CD: 3400       	B0MOV 0x84, #00h
+  2CE: 3336       	B0MOV 0x83, #36h
+  2CF: 2D00       	MOV A, #00h
+  2D0: 3200       	B0MOV 0x82, #00h
+  2D1: C3B0       	CALL 0x03B0
+  2D2: C025       	CALL 0x0025
+  2D3: 7086       	B0BTS0 0x86.0
+  2D4: 830B       	JMP 0x030B
+  2D5: 7A86       	B0BTS1 0x86.2
+  2D6: 830B       	JMP 0x030B
+L53:
+                  	                  				{
+                  	                  					led_init = 0;
+  2D7: 400F       	BCLR 0x0F.0
+L56:
+                  	                  					if (ad_val >= LedChangeBufSetting[LED_GREEN][THRESHOLD_L]){
+  2D8: 3400       	B0MOV 0x84, #00h
+  2D9: 3336       	B0MOV 0x83, #36h
+  2DA: 3200       	B0MOV 0x82, #00h
+  2DB: 2D27       	MOV A, #27h
+  2DC: C390       	CALL 0x0390
+  2DD: C025       	CALL 0x0025
+  2DE: 7A86       	B0BTS1 0x86.2
+  2DF: 82E2       	JMP 0x02E2
+L57:
+                  	                  						led_set = LED_GREEN;
+  2E0: 2B38       	CLR 0x38
+L60:
+                  	                  					} else if ((ad_val >= LedChangeBufSetting[LED_YELLOW][THRESHOLD_L]) &&
+  2E1: 8344       	JMP 0x0344
+L16:
+                  	                  					} else if ((ad_val >= LedChangeBufSetting[LED_YELLOW][THRESHOLD_L]) &&
+  2E2: 3400       	B0MOV 0x84, #00h
+  2E3: 3336       	B0MOV 0x83, #36h
+  2E4: 3200       	B0MOV 0x82, #00h
+  2E5: 2D2B       	MOV A, #2bh
+  2E6: C390       	CALL 0x0390
+  2E7: C025       	CALL 0x0025
+  2E8: 7A86       	B0BTS1 0x86.2
+  2E9: 82F5       	JMP 0x02F5
+  2EA: 3400       	B0MOV 0x84, #00h
+  2EB: 3336       	B0MOV 0x83, #36h
+  2EC: 3200       	B0MOV 0x82, #00h
+  2ED: 2D27       	MOV A, #27h
+  2EE: C390       	CALL 0x0390
+  2EF: C025       	CALL 0x0025
+  2F0: 7286       	B0BTS0 0x86.2
+  2F1: 82F5       	JMP 0x02F5
+L63:
+                  	                  							(ad_val < LedChangeBufSetting[LED_GREEN][THRESHOLD_L])) {
+                  	                  						led_set = LED_YELLOW;
+  2F2: 2D01       	MOV A, #01h
+  2F3: 1F38       	MOV 0x38, A
+L66:
+                  	                  					} else if ((ad_val >= LedChangeBufSetting[LED_RED][THRESHOLD_L]) &&
+  2F4: 8344       	JMP 0x0344
+L20:
+                  	                  					} else if ((ad_val >= LedChangeBufSetting[LED_RED][THRESHOLD_L]) &&
+  2F5: 3400       	B0MOV 0x84, #00h
+  2F6: 3336       	B0MOV 0x83, #36h
+  2F7: 3200       	B0MOV 0x82, #00h
+  2F8: 2D2F       	MOV A, #2fh
+  2F9: C390       	CALL 0x0390
+  2FA: C025       	CALL 0x0025
+  2FB: 7A86       	B0BTS1 0x86.2
+  2FC: 8308       	JMP 0x0308
+  2FD: 3400       	B0MOV 0x84, #00h
+  2FE: 3336       	B0MOV 0x83, #36h
+  2FF: 3200       	B0MOV 0x82, #00h
+  300: 2D2B       	MOV A, #2bh
+  301: C390       	CALL 0x0390
+  302: C025       	CALL 0x0025
+  303: 7286       	B0BTS0 0x86.2
+  304: 8308       	JMP 0x0308
+L69:
+                  	                  							(ad_val < LedChangeBufSetting[LED_YELLOW][THRESHOLD_L])) {
+                  	                  						led_set = LED_RED;
+  305: 2D02       	MOV A, #02h
+  306: 1F38       	MOV 0x38, A
+L72:
+                  	                  					} else {
+  307: 8344       	JMP 0x0344
+L26:
+                  	                  						led_set = LED_RED_BLINK;
+  308: 2D03       	MOV A, #03h
+  309: 1F38       	MOV 0x38, A
+L77:
+                  	                  					}
+                  	                  				}else{
+  30A: 8344       	JMP 0x0344
+L14:
+                  	                  					//do not control led (default off)
+                  	                  					led_set = LED_TYPE_NUM;
+  30B: 2D04       	MOV A, #04h
+  30C: 1F38       	MOV 0x38, A
+L84:
+                  	                  				}
+                  	                  			} else {
+  30D: 8344       	JMP 0x0344
+L12:
+                  	                  				/* According to the AD value control led */
+                  	                  				if (ad_val < LedChangeBufSetting[led_status][THRESHOLD_L]){
+  30E: 1E24       	MOV A, 0x24
+  30F: 2F0B       	B0MOV 0x0B, A
+  310: 2B0C       	CLR 0x0C
+  311: 6286       	B0BCLR 0x86.2
+  312: 0B0B       	RLCM 0x0B
+  313: 0B0C       	RLCM 0x0C
+  314: 6286       	B0BCLR 0x86.2
+  315: 0B0B       	RLCM 0x0B
+  316: 0B0C       	RLCM 0x0C
+  317: 2E0B       	B0MOV A, 0x0B
+  318: 1427       	ADD A, #27h
+  319: 2F0B       	B0MOV 0x0B, A
+  31A: 2D00       	MOV A, #00h
+  31B: 100C       	ADC A, 0x0C
+  31C: 3400       	B0MOV 0x84, #00h
+  31D: 3336       	B0MOV 0x83, #36h
+  31E: 2F82       	B0MOV R, A
+  31F: 2E0B       	B0MOV A, 0x0B
+  320: C390       	CALL 0x0390
+  321: C025       	CALL 0x0025
+  322: 7286       	B0BTS0 PFLAG.2
+  323: 8328       	JMP 0x0328
+L91:
+                  	                  					led_set = led_status + 1;
+  324: 2D01       	MOV A, #01h
+  325: 1224       	ADD A, 0x24
+  326: 1F38       	MOV 0x38, A
+L94:
+                  	                  				} else if (ad_val >= LedChangeBufSetting[led_status][THRESHOLD_H]) {
+  327: 8344       	JMP 0x0344
+L32:
+                  	                  				} else if (ad_val >= LedChangeBufSetting[led_status][THRESHOLD_H]) {
+  328: 1E24       	MOV A, 0x24
+  329: 2F0B       	B0MOV 0x0B, A
+  32A: 2B0C       	CLR 0x0C
+  32B: 6286       	B0BCLR 0x86.2
+  32C: 0B0B       	RLCM 0x0B
+  32D: 0B0C       	RLCM 0x0C
+  32E: 6286       	B0BCLR 0x86.2
+  32F: 0B0B       	RLCM 0x0B
+  330: 0B0C       	RLCM 0x0C
+  331: 2E0B       	B0MOV A, 0x0B
+  332: 1425       	ADD A, #25h
+  333: 2F0B       	B0MOV 0x0B, A
+  334: 2D00       	MOV A, #00h
+  335: 100C       	ADC A, 0x0C
+  336: 3400       	B0MOV 0x84, #00h
+  337: 3336       	B0MOV 0x83, #36h
+  338: 2F82       	B0MOV R, A
+  339: 2E0B       	B0MOV A, 0x0B
+  33A: C390       	CALL 0x0390
+  33B: C025       	CALL 0x0025
+  33C: 7A86       	B0BTS1 PFLAG.2
+  33D: 8342       	JMP 0x0342
+L97:
+                  	                  					led_set = led_status - 1; 
+  33E: 1E24       	MOV A, 0x24
+  33F: 2401       	SUB A, #01h
+  340: 1F38       	MOV 0x38, A
+L100:
+                  	                  				} else {
+  341: 8344       	JMP 0x0344
+L35:
+                  	                  					led_set = led_status;
+  342: 1E24       	MOV A, 0x24
+  343: 1F38       	MOV 0x38, A
+L105:
+                  	                  				}
+                  	                  			}
+                  	                  			setLED(led_set);
+  344: 1E38       	MOV A, 0x38
+  345: 1F35       	MOV 0x35, A
+  346: C348       	CALL 0x0348
+L110:
+                  	                  		}
+                  	                  	
+                  	                  		return;
+                  	                  	}
+  347: 0E00       	RET
+_Function_setLED_code:
+                  	                  	
+                  	                  	/*===========================================================================*/
+                  	                  	/* setLED                                                                    */
+                  	                  	/*   arg : led_type type of led                                              */
+                  	                  	/*   ret : void                                                              */
+                  	                  	/*===========================================================================*/
+                  	                  	static void setLED(unsigned char led_type)
+                  	                  	{
+                  	                  		switch (led_type) {
+  348: 1E35       	MOV A, 0x35
+  349: 1480       	ADD A, #80h
+  34A: 0684       	CMPRS A, #84h
+  34B: 7286       	B0BTS0 0x86.2
+  34C: 8355       	JMP 0x0355
+  34D: 2480       	SUB A, #80h
+  34E: 7A86       	B0BTS1 0x86.2
+  34F: 8355       	JMP 0x0355
+  350: 03CE       	B0ADD PCL, A
+  351: 8356       	JMP 0x0356
+  352: 835A       	JMP 0x035A
+  353: 835E       	JMP 0x035E
+  354: 8362       	JMP 0x0362
+L151:
+  355: 836A       	JMP 0x036A
+L125:
+                  	                  			case LED_GREEN:
+                  	                  				FP03 = 0; //red = off
+  356: 63D0       	B0BCLR P0.3
+L128:
+                  	                  				FP44 = 1; //green = on
+  357: 6CD4       	B0BSET P4.4
+L129:
+                  	                  				FP53 = 0; //yellow = off
+  358: 63D5       	B0BCLR P5.3
+L130:
+                  	                  				break;
+  359: 836A       	JMP 0x036A
+L119:
+                  	                  			case LED_YELLOW:
+                  	                  				FP03 = 0; //red = off
+  35A: 63D0       	B0BCLR P0.3
+L132:
+                  	                  				FP44 = 0; //green = off
+  35B: 64D4       	B0BCLR P4.4
+L133:
+                  	                  				FP53 = 1; //yellow = on
+  35C: 6BD5       	B0BSET P5.3
+L134:
+                  	                  				break;
+  35D: 836A       	JMP 0x036A
+L120:
+                  	                  			case LED_RED:
+                  	                  				FP03 = 1; //red = on
+  35E: 6BD0       	B0BSET P0.3
+L136:
+                  	                  				FP44 = 0; //green = off
+  35F: 64D4       	B0BCLR P4.4
+L137:
+                  	                  				FP53 = 0; //yellow = off
+  360: 63D5       	B0BCLR P5.3
+L138:
+                  	                  				break;
+  361: 836A       	JMP 0x036A
+L121:
+                  	                  			case LED_RED_BLINK:
+                  	                  				FP03 = ~FP03; //red = blink
+  362: 2D00       	MOV A, #00h
+  363: 73D0       	B0BTS0 P0.3
+  364: 2D01       	MOV A, #01h
+  365: 6BD0       	B0BSET P0.3
+  366: 0600       	CMPRS A, #00h
+  367: 63D0       	B0BCLR P0.3
+L140:
+                  	                  				FP44 = 0;     //green = off
+  368: 64D4       	B0BCLR P4.4
+L141:
+                  	                  				FP53 = 0;     //yellow = off
+  369: 63D5       	B0BCLR P5.3
+L142:
+                  	                  				break;
+                  	                  			default:
+                  	                  				break;
+                  	                  		}
+                  	                  		
+                  	                  		led_status = led_type;
+  36A: 1E35       	MOV A, 0x35
+  36B: 1F24       	MOV 0x24, A
+L147:
+                  	                  		
+                  	                  		return;
+                  	                  	}
+  36C: 0E00       	RET
+__Get2ByteParaToDest@RTL:
+  36D: 2F02       	B0MOV 0x02, A
+  36E: 2EE7       	B0MOV A, @YZ
+  36F: 2F10       	B0MOV 0x10, A
+  370: 1683       	INCMS 0x83
+  371: 0000       	NOP
+  372: 2EE7       	B0MOV A, @YZ
+  373: 2F11       	B0MOV 0x11, A
+  374: 2E02       	B0MOV A, 0x02
+  375: 0E00       	RET
+__Get2ByteRomToLArg:
+  376: 2F18       	B0MOV 0x18, A
+  377: 2E82       	B0MOV A, R
+  378: 2F19       	B0MOV 0x19, A
+  379: 2B02       	CLR 0x02
+  37A: 0D00       	MOVC
+  37B: 2F10       	B0MOV 0x10, A
+  37C: 2E82       	B0MOV A, R
+  37D: 2F11       	B0MOV 0x11, A
+  37E: 2E19       	B0MOV A, 0x19
+  37F: 2F82       	B0MOV R, A
+  380: 2E18       	B0MOV A, 0x18
+  381: 0E00       	RET
+__Get2ByteRamToRArg:
+  382: 2F83       	B0MOV Z, A
+  383: 2E82       	B0MOV A, R
+  384: 2F84       	B0MOV Y, A
+  385: C3EA       	CALL 0x03EA
+  386: 0E00       	RET
+__Get2ByteRomToRArg:
+  387: 2F83       	B0MOV Z, A
+  388: 2E82       	B0MOV A, R
+  389: 2F84       	B0MOV Y, A
+  38A: 2B02       	CLR 0x02
+  38B: 0D00       	MOVC
+@@Mov2ByteToRArg:
+  38C: 2F14       	B0MOV 0x14, A
+  38D: 2E82       	B0MOV A, R
+  38E: 2F15       	B0MOV 0x15, A
+  38F: 0E00       	RET
+__Get2BytePara@RTL:
+  390: C36D       	CALL 0x036D
+  391: 2F83       	B0MOV Z, A
+  392: 2E82       	B0MOV A, R
+  393: 2F84       	B0MOV Y, A
+  394: C3EA       	CALL 0x03EA
+  395: 0E00       	RET
+__Get2ByteRamRom:
+  396: C36D       	CALL 0x036D
+  397: 2F83       	B0MOV Z, A
+  398: 2E82       	B0MOV A, R
+  399: 2F84       	B0MOV Y, A
+  39A: 2B02       	CLR 0x02
+  39B: 0D00       	MOVC
+  39C: 2F14       	B0MOV 0x14, A
+  39D: 2E82       	B0MOV A, R
+  39E: 2F15       	B0MOV 0x15, A
+  39F: 0E00       	RET
+__Get2ByteRomRam:
+  3A0: C376       	CALL 0x0376
+  3A1: 2F83       	B0MOV Z, A
+  3A2: 2E82       	B0MOV A, R
+  3A3: 2F84       	B0MOV Y, A
+  3A4: C3EA       	CALL 0x03EA
+  3A5: 0E00       	RET
+__Get2ByteRomRom:
+  3A6: C376       	CALL 0x0376
+  3A7: 2F83       	B0MOV Z, A
+  3A8: 2E82       	B0MOV A, R
+  3A9: 2F84       	B0MOV Y, A
+  3AA: 2B02       	CLR 0x02
+  3AB: 0D00       	MOVC
+  3AC: 2F14       	B0MOV 0x14, A
+  3AD: 2E82       	B0MOV A, R
+  3AE: 2F15       	B0MOV 0x15, A
+  3AF: 0E00       	RET
+__Get2ByteRamCst:
+  3B0: C36D       	CALL 0x036D
+  3B1: 2F14       	B0MOV 0x14, A
+  3B2: 2E82       	B0MOV A, R
+  3B3: 2F15       	B0MOV 0x15, A
+  3B4: 0E00       	RET
+__Store2ByteLArg2HL:
+  3B5: 2E01       	B0MOV A, 0x01
+  3B6: 2F83       	B0MOV Z, A
+  3B7: 2E00       	B0MOV A, 0x00
+  3B8: 2F84       	B0MOV Y, A
+  3B9: 2E10       	B0MOV A, 0x10
+  3BA: 2FE7       	B0MOV @YZ, A
+  3BB: 1683       	INCMS 0x83
+  3BC: 0000       	NOP
+  3BD: 2E11       	B0MOV A, 0x11
+  3BE: 2FE7       	B0MOV @YZ, A
+  3BF: 0E00       	RET
+__SLLong@RTL:
+  3C0: 2401       	SUB A, #01h
+  3C1: 7A86       	B0BTS1 PFLAG.2
+  3C2: 83C7       	JMP 0x03C7
+  3C3: 6286       	B0BCLR PFLAG.2
+  3C4: 0B10       	RLCM 0x10
+  3C5: 0B11       	RLCM 0x11
+  3C6: 83C0       	JMP 0x03C0
+@@RET:
+  3C7: C3B5       	CALL 0x03B5
+  3C8: 0E00       	RET
+__SRLong@RTL:
+  3C9: 2401       	SUB A, #01h
+  3CA: 7A86       	B0BTS1 0x86.2
+  3CB: 83D2       	JMP 0x03D2
+  3CC: 2F02       	B0MOV 0x02, A
+  3CD: 0A11       	RLC 0x11
+  3CE: 0911       	RRCM 0x11
+  3CF: 0910       	RRCM 0x10
+  3D0: 2E02       	B0MOV A, 0x02
+  3D1: 83C9       	JMP 0x03C9
+@@RET:
+  3D2: C3B5       	CALL 0x03B5
+  3D3: 0E00       	RET
+__Mov2ByteRamToLArg@RTL:
+  3D4: 2EE7       	B0MOV A, @YZ
+  3D5: 2F10       	B0MOV 0x10, A
+  3D6: 1683       	INCMS 0x83
+  3D7: 0000       	NOP
+  3D8: 2EE7       	B0MOV A, @YZ
+  3D9: 2F11       	B0MOV 0x11, A
+  3DA: 0E00       	RET
+__Mov4ByteRamToLArg@RTL:
+  3DB: 2EE7       	B0MOV A, @YZ
+  3DC: 2F10       	B0MOV 0x10, A
+  3DD: 1683       	INCMS 0x83
+  3DE: 0000       	NOP
+  3DF: 2EE7       	B0MOV A, @YZ
+  3E0: 2F11       	B0MOV 0x11, A
+  3E1: 1683       	INCMS 0x83
+  3E2: 0000       	NOP
+  3E3: 2EE7       	B0MOV A, @YZ
+  3E4: 2F12       	B0MOV 0x12, A
+  3E5: 1683       	INCMS 0x83
+  3E6: 0000       	NOP
+  3E7: 2EE7       	B0MOV A, @YZ
+  3E8: 2F13       	B0MOV 0x13, A
+  3E9: 0E00       	RET
+__Mov2ByteRamToRArg@RTL:
+  3EA: 2EE7       	B0MOV A, @YZ
+  3EB: 2F14       	B0MOV 0x14, A
+  3EC: 1683       	INCMS 0x83
+  3ED: 0000       	NOP
+  3EE: 2EE7       	B0MOV A, @YZ
+  3EF: 2F15       	B0MOV 0x15, A
+  3F0: 0E00       	RET
+__Mov4ByteRamToRArg@RTL:
+  3F1: C3EA       	CALL 0x03EA
+  3F2: 1683       	INCMS 0x83
+  3F3: 0000       	NOP
+  3F4: 2EE7       	B0MOV A, @YZ
+  3F5: 2F16       	B0MOV 0x16, A
+  3F6: 1683       	INCMS 0x83
+  3F7: 0000       	NOP
+  3F8: 2EE7       	B0MOV A, @YZ
+  3F9: 2F17       	B0MOV 0x17, A
+  3FA: 0E00       	RET
